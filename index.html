@@ -1,0 +1,2717 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>يوسف | مصمم جرافيك بالذكاء الاصطناعي — YUOSSEF</title>
+<meta name="description" content="أهلاً بيك في مساحة يوسف الإبداعية — تصميم جرافيك مدعوم بالذكاء الاصطناعي، إعلانات، صور منتجات، فن رقمي، وهندسة برومبيت.">
+<meta name="theme-color" content="#f7f3ec">
+<meta name="color-scheme" content="light">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="يوسف | مصمم جرافيك بالذكاء الاصطناعي">
+<meta property="og:image" content="https://i.postimg.cc/cC8vgH65/Cera-Ve-moisturizer-poster-design-20261009203611.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23f7f3ec'/%3E%3Ctext x='50' y='72' font-family='Georgia,serif' font-size='64' font-weight='700' fill='%23c25a3a' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   1. DESIGN SYSTEM
+   ============================================================ */
+:root{
+  --bg:            #f7f3ec;
+  --bg-soft:       #efe9dd;
+  --bg-elev:       #ebe4d5;
+  --surface:       #ffffff;
+  --surface-warm:  #fbf8f1;
+
+  --ink:           #14110d;
+  --ink-2:         #2b2620;
+  --ink-dim:       #58534b;
+  --ink-mute:      #8f887c;
+  --ink-faint:     #b8b1a2;
+
+  --accent:        #c25a3a;
+  --accent-hover:  #a3472b;
+  --accent-soft:   rgba(194,90,58,0.10);
+  --accent-line:   rgba(194,90,58,0.32);
+
+  --border:        rgba(20,17,13,0.09);
+  --border-2:      rgba(20,17,13,0.14);
+  --border-3:      rgba(20,17,13,0.24);
+
+  --font-display-en: "Fraunces", "Georgia", "Times New Roman", serif;
+  --font-body-en:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display-ar: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --font-body-ar:    "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+
+  --font-display: var(--font-display-ar);
+  --font-body:    var(--font-body-ar);
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius:    14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --gutter: clamp(18px, 4vw, 60px);
+  --section-y: clamp(64px, 9vw, 130px);
+  --maxw: 1440px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 0.28s;
+}
+
+html[dir="ltr"]{
+  --font-display: var(--font-display-en);
+  --font-body:    var(--font-body-en);
+}
+
+/* ============================================================
+   2. RESET & BASE
+   ============================================================ */
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+html[dir="rtl"] body{ line-height:1.85; }
+body.no-scroll{ overflow:hidden; }
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+button{ font:inherit; color:inherit; background:none; border:none; cursor:pointer; }
+ul{ margin:0; padding:0; list-style:none; }
+h1,h2,h3,h4,p{ margin:0; }
+::selection{ background:var(--accent); color:var(--bg); }
+:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:4px; }
+
+/* ============================================================
+   3. LAYOUT
+   ============================================================ */
+.wrap{
+  width:100%;
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+}
+.section{ padding-block:var(--section-y); position:relative; }
+.section-tight{ padding-block:clamp(48px,6vw,90px); }
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  font-family:var(--font-body-en);
+}
+html[dir="rtl"] .eyebrow{ letter-spacing:0.04em; font-size:12.5px; font-family:var(--font-body); }
+.eyebrow::before{
+  content:"";
+  width:22px;
+  height:1px;
+  background:var(--accent);
+  display:block;
+  flex-shrink:0;
+}
+
+.section-title{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(34px,5.2vw,64px);
+  line-height:1.05;
+  letter-spacing:-0.02em;
+  margin-top:12px;
+}
+html[dir="rtl"] .section-title{ letter-spacing:0; line-height:1.22; font-size:clamp(30px,4.6vw,54px); }
+.section-sub{
+  max-width:52ch;
+  color:var(--ink-dim);
+  font-size:clamp(14px,1.05vw,16px);
+  line-height:1.75;
+  margin-top:14px;
+}
+
+.section-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:clamp(36px,5vw,64px);
+}
+
+/* ============================================================
+   4. BUTTONS
+   ============================================================ */
+.btn{
+  --btn-bg: transparent;
+  --btn-fg: var(--ink);
+  --btn-bd: var(--border-2);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:15px 26px;
+  border:1px solid var(--btn-bd);
+  border-radius:var(--radius-pill);
+  background:var(--btn-bg);
+  color:var(--btn-fg);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  position:relative;
+  overflow:hidden;
+  transition:color var(--dur-fast) var(--ease),
+             border-color var(--dur-fast) var(--ease),
+             background-color var(--dur-fast) var(--ease),
+             transform var(--dur-fast) var(--ease);
+  font-family:var(--font-body-en);
+}
+html[dir="rtl"] .btn{ letter-spacing:0; font-size:13.5px; font-family:var(--font-body); }
+.btn::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:var(--accent);
+  transform:translateY(101%);
+  transition:transform 0.5s var(--ease);
+  z-index:0;
+}
+.btn > *{ position:relative; z-index:1; }
+.btn:hover::before{ transform:translateY(0); }
+.btn:hover{ color:#fff; border-color:var(--accent); }
+.btn:active{ transform:scale(0.98); }
+.btn-primary{ --btn-bg: var(--ink); --btn-fg: var(--bg); --btn-bd: var(--ink); }
+.btn-primary:hover{ color:#fff; }
+.btn-accent{ --btn-bg: var(--accent); --btn-fg: #fff; --btn-bd: var(--accent); }
+.btn-accent:hover{ color:#fff; }
+.btn-sm{ padding:11px 20px; font-size:11px; letter-spacing:0.10em; }
+
+/* ============================================================
+   5. NAV
+   ============================================================ */
+.nav{
+  position:fixed;
+  top:0; left:0; right:0;
+  z-index:900;
+  transition:background-color 0.4s var(--ease),
+             border-color 0.4s var(--ease),
+             backdrop-filter 0.4s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.nav.scrolled{
+  background:rgba(247,243,236,0.88);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom-color:var(--border);
+}
+.nav-inner{
+  width:100%;
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding:16px var(--gutter);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.logo{
+  font-family:var(--font-display-en);
+  font-weight:700;
+  font-size:20px;
+  letter-spacing:-0.01em;
+  display:inline-flex;
+  align-items:flex-start;
+  gap:2px;
+  line-height:1;
+  flex-shrink:0;
+  color:var(--ink);
+  font-style:italic;
+}
+.logo sup{ font-size:9px; font-weight:500; color:var(--accent); top:0.1em; position:relative; font-style:normal; }
+
+.nav-links{ display:flex; align-items:center; gap:0; }
+.nav-link{
+  position:relative;
+  padding:9px 13px;
+  font-size:13.5px;
+  font-weight:500;
+  color:var(--ink-dim);
+  border-radius:var(--radius-pill);
+  transition:color var(--dur-fast) var(--ease);
+  white-space:nowrap;
+}
+html[dir="rtl"] .nav-link{ font-size:14.5px; }
+.nav-link::after{
+  content:"";
+  position:absolute;
+  left:50%; bottom:2px;
+  width:0; height:1.5px;
+  background:var(--accent);
+  transform:translateX(-50%);
+  transition:width 0.35s var(--ease);
+}
+.nav-link:hover{ color:var(--ink); }
+.nav-link:hover::after,
+.nav-link.active::after{ width:16px; }
+.nav-link.active{ color:var(--ink); }
+
+.nav-right{ display:flex; align-items:center; gap:10px; }
+
+.lang-toggle{
+  display:flex;
+  align-items:center;
+  gap:2px;
+  padding:3px;
+  border:1px solid var(--border-2);
+  border-radius:var(--radius-pill);
+  background:rgba(255,255,255,0.55);
+  flex-shrink:0;
+}
+.lang-btn{
+  padding:7px 13px;
+  border-radius:var(--radius-pill);
+  font-size:11.5px;
+  font-weight:700;
+  letter-spacing:0.06em;
+  color:var(--ink-mute);
+  transition:background-color 0.3s var(--ease), color 0.3s var(--ease);
+  line-height:1;
+  font-family:var(--font-body-en);
+}
+.lang-btn.active{ background:var(--ink); color:var(--bg); }
+.lang-btn:not(.active):hover{ color:var(--ink); }
+
+.nav-toggle{
+  display:none;
+  width:44px; height:44px;
+  border:1px solid var(--border-2);
+  border-radius:var(--radius-pill);
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+.nav-toggle span{
+  position:absolute;
+  left:50%;
+  width:16px; height:1.5px;
+  background:var(--ink);
+  border-radius:2px;
+  transform:translateX(-50%);
+  transition:transform 0.35s var(--ease);
+}
+.nav-toggle span:nth-child(1){ top:18px; }
+.nav-toggle span:nth-child(2){ bottom:18px; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1){ transform:translateX(-50%) translateY(3.5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2){ transform:translateX(-50%) translateY(-3.5px) rotate(-45deg); }
+
+.mobile-menu{
+  position:fixed;
+  inset:0;
+  z-index:880;
+  background:var(--bg);
+  padding:100px var(--gutter) 40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(-12px);
+  transition:opacity 0.4s var(--ease), transform 0.4s var(--ease), visibility 0.4s;
+}
+.mobile-menu.open{ opacity:1; visibility:visible; transform:translateY(0); }
+.mobile-links{ display:flex; flex-direction:column; gap:2px; }
+.mobile-links a{
+  font-family:var(--font-display);
+  font-size:clamp(26px,7vw,38px);
+  font-weight:600;
+  letter-spacing:-0.02em;
+  padding:12px 0;
+  border-bottom:1px solid var(--border);
+  transition:color var(--dur-fast) var(--ease), padding-inline-start var(--dur-fast) var(--ease);
+}
+html[dir="rtl"] .mobile-links a{ letter-spacing:0; }
+.mobile-links a:hover{ color:var(--accent); padding-inline-start:10px; }
+.mobile-foot{ display:flex; flex-direction:column; gap:16px; padding-top:28px; }
+.mobile-foot .btn{ width:100%; }
+
+/* ============================================================
+   6. WELCOME HERO
+   ============================================================ */
+.welcome{
+  position:relative;
+  padding-top:clamp(120px,15vw,180px);
+  padding-bottom:clamp(40px,5vw,80px);
+  overflow:hidden;
+}
+.welcome-glow{
+  position:absolute;
+  width:min(760px,90vw);
+  aspect-ratio:1;
+  top:-30%;
+  inset-inline-end:-20%;
+  background:radial-gradient(circle, var(--accent-soft) 0%, transparent 62%);
+  pointer-events:none;
+  z-index:0;
+}
+.welcome-inner{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1.15fr 0.85fr;
+  gap:clamp(32px,5vw,80px);
+  align-items:center;
+}
+
+.welcome-hello{
+  font-family:var(--font-display);
+  font-weight:500;
+  font-style:italic;
+  font-size:clamp(20px,2vw,28px);
+  color:var(--accent);
+  display:block;
+  margin-bottom:14px;
+  letter-spacing:-0.01em;
+}
+html[dir="rtl"] .welcome-hello{ font-style:normal; font-weight:600; }
+
+.welcome-title{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(40px,6.6vw,96px);
+  line-height:1.02;
+  letter-spacing:-0.03em;
+  color:var(--ink);
+}
+html[dir="rtl"] .welcome-title{ letter-spacing:0; line-height:1.18; font-size:clamp(34px,5.6vw,78px); }
+.welcome-title em{
+  font-style:italic;
+  font-weight:500;
+  color:var(--accent);
+}
+html[dir="rtl"] .welcome-title em{ font-style:normal; font-weight:600; }
+
+.welcome-lead{
+  margin-top:26px;
+  max-width:44ch;
+  font-size:clamp(15.5px,1.2vw,18px);
+  line-height:1.72;
+  color:var(--ink-dim);
+}
+.welcome-lead strong{ color:var(--ink); font-weight:600; }
+
+.welcome-actions{ margin-top:34px; display:flex; flex-wrap:wrap; gap:12px; }
+
+.welcome-signature{
+  margin-top:34px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  font-size:13px;
+  color:var(--ink-mute);
+}
+.welcome-signature .sig-line{
+  width:36px; height:1px;
+  background:var(--accent);
+}
+html[dir="rtl"] .welcome-signature .sig-line{ order:2; }
+.welcome-signature .sig-name{
+  font-family:var(--font-display-en);
+  font-style:italic;
+  font-size:20px;
+  color:var(--ink);
+  font-weight:600;
+}
+
+/* Welcome visual */
+.welcome-visual{
+  position:relative;
+  aspect-ratio:4/5;
+  min-height:340px;
+}
+.wv-main{
+  position:absolute;
+  inset:0;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  background:var(--surface);
+  border:1px solid var(--border-2);
+  box-shadow:0 40px 80px -46px rgba(20,17,13,0.34);
+  opacity:0;
+  transform:translateY(24px);
+  animation:heroIn 1.1s var(--ease) 0.2s forwards;
+}
+.wv-main img{ width:100%; height:100%; object-fit:cover; }
+
+.wv-small{
+  position:absolute;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--surface);
+  border:3px solid var(--bg);
+  box-shadow:0 24px 50px -22px rgba(20,17,13,0.32);
+  opacity:0;
+  z-index:2;
+  animation:heroIn 1.1s var(--ease) forwards;
+}
+.wv-small img{ width:100%; height:100%; object-fit:cover; }
+.wv-s1{
+  width:36%;
+  aspect-ratio:1;
+  inset-inline-start:-8%;
+  bottom:8%;
+  animation-delay:0.6s;
+}
+.wv-s2{
+  width:26%;
+  aspect-ratio:3/4;
+  inset-inline-end:-6%;
+  top:6%;
+  animation-delay:0.8s;
+}
+@keyframes heroIn{
+  from{ opacity:0; transform:translateY(22px) scale(0.96); }
+  to{ opacity:1; transform:translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: no-preference){
+  .wv-s1{ animation:heroIn 1.1s var(--ease) 0.6s forwards, gentleFloat 8s ease-in-out 2s infinite; }
+  .wv-s2{ animation:heroIn 1.1s var(--ease) 0.8s forwards, gentleFloat2 10s ease-in-out 2.4s infinite; }
+  @keyframes gentleFloat{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-10px); } }
+  @keyframes gentleFloat2{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(12px); } }
+}
+
+/* ============================================================
+   7. HIGHLIGHT STRIP
+   ============================================================ */
+.highlights{
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding-block:clamp(28px,3.5vw,48px);
+  background:var(--bg-soft);
+}
+.highlights-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:clamp(20px,3vw,40px);
+}
+.hl{
+  text-align:start;
+}
+.hl-num{
+  font-family:var(--font-display);
+  font-size:clamp(36px,4.6vw,58px);
+  font-weight:600;
+  letter-spacing:-0.03em;
+  line-height:1;
+  color:var(--ink);
+  display:inline-block;
+}
+html[dir="rtl"] .hl-num{ letter-spacing:0; }
+.hl-plus{
+  font-family:var(--font-display);
+  font-size:clamp(22px,2.8vw,34px);
+  font-weight:600;
+  color:var(--accent);
+  line-height:1;
+  margin-inline-start:2px;
+}
+.hl-label{
+  display:block;
+  margin-top:10px;
+  font-size:12.5px;
+  color:var(--ink-mute);
+  font-weight:500;
+}
+
+/* ============================================================
+   8. ABOUT
+   ============================================================ */
+.about-grid{
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:clamp(36px,6vw,90px);
+  align-items:center;
+}
+.about-title{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(30px,4.6vw,58px);
+  line-height:1.08;
+  letter-spacing:-0.02em;
+  margin-top:14px;
+}
+html[dir="rtl"] .about-title{ letter-spacing:0; line-height:1.25; }
+.about-title em{ font-style:italic; color:var(--accent); font-weight:500; }
+html[dir="rtl"] .about-title em{ font-style:normal; font-weight:600; }
+
+.about-copy{
+  margin-top:28px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  max-width:56ch;
+}
+.about-copy p{
+  font-size:clamp(15px,1.1vw,17px);
+  line-height:1.8;
+  color:var(--ink-dim);
+}
+.about-copy p:first-child{ color:var(--ink-2); font-size:clamp(15.5px,1.15vw,18px); }
+
+.about-media{
+  position:relative;
+  aspect-ratio:4/5;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  border:1px solid var(--border-2);
+  background:var(--surface);
+  box-shadow:0 40px 70px -40px rgba(20,17,13,0.28);
+}
+.about-media img{ width:100%; height:100%; object-fit:cover; }
+.about-media-tag{
+  position:absolute;
+  bottom:16px;
+  inset-inline-start:16px;
+  padding:9px 15px;
+  background:rgba(247,243,236,0.92);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border-radius:var(--radius-pill);
+  font-size:12px;
+  color:var(--ink);
+  font-weight:500;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.about-media-tag i{
+  width:6px; height:6px;
+  border-radius:50%;
+  background:var(--accent);
+  display:block;
+}
+
+/* ============================================================
+   9. PORTFOLIO
+   ============================================================ */
+.portfolio-intro{
+  background:var(--bg-soft);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding-block:clamp(48px,6vw,80px);
+}
+
+.cat-section{
+  padding-block:clamp(50px,7vw,100px);
+  border-bottom:1px solid var(--border);
+  position:relative;
+}
+.cat-section:last-child{ border-bottom:none; }
+
+.cat-head{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:end;
+  gap:clamp(16px,2.5vw,36px);
+  margin-bottom:clamp(32px,4.5vw,58px);
+  padding-bottom:22px;
+  border-bottom:1px solid var(--border);
+}
+.cat-num{
+  font-family:var(--font-display-en);
+  font-style:italic;
+  font-size:clamp(22px,2.6vw,34px);
+  font-weight:500;
+  color:var(--accent);
+  line-height:1;
+  flex-shrink:0;
+}
+.cat-title{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(26px,3.4vw,44px);
+  line-height:1.1;
+  letter-spacing:-0.02em;
+  color:var(--ink);
+}
+html[dir="rtl"] .cat-title{ letter-spacing:0; line-height:1.3; }
+.cat-desc{
+  max-width:44ch;
+  color:var(--ink-dim);
+  font-size:14px;
+  line-height:1.7;
+  text-align:end;
+}
+
+.cat-count{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:11px;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  font-family:var(--font-body-en);
+  font-weight:600;
+}
+html[dir="rtl"] .cat-count{ letter-spacing:0; font-size:12.5px; font-family:var(--font-body); }
+.cat-count span{
+  display:inline-block;
+  padding:3px 9px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  border-radius:var(--radius-pill);
+  font-size:11.5px;
+  min-width:22px;
+  text-align:center;
+}
+
+/* Gallery grid — CSS columns to preserve aspect ratio */
+.gallery{
+  column-count:3;
+  column-gap:clamp(16px,2vw,26px);
+}
+.gallery.cols-2{ column-count:2; }
+.gallery.cols-4{ column-count:4; }
+
+@media (max-width:1100px){
+  .gallery{ column-count:2; }
+  .gallery.cols-4{ column-count:2; }
+}
+@media (max-width:640px){
+  .gallery,
+  .gallery.cols-2,
+  .gallery.cols-4{ column-count:1; }
+}
+
+.work{
+  break-inside:avoid;
+  margin-bottom:clamp(20px,2.4vw,34px);
+  display:block;
+  width:100%;
+  padding:0;
+  text-align:start;
+  background:transparent;
+  border:none;
+  cursor:pointer;
+  position:relative;
+  transition:transform 0.45s var(--ease);
+}
+.work:hover{ transform:translateY(-4px); }
+
+.work-frame{
+  position:relative;
+  overflow:hidden;
+  border-radius:var(--radius);
+  background:var(--surface);
+  border:1px solid var(--border-2);
+  box-shadow:0 12px 30px -22px rgba(20,17,13,0.28);
+  transition:border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.work:hover .work-frame{
+  border-color:var(--ink);
+  box-shadow:0 24px 46px -26px rgba(20,17,13,0.34);
+}
+
+.work-frame img{
+  width:100%;
+  height:auto;
+  display:block;
+  transition:transform 0.85s var(--ease);
+}
+.work:hover .work-frame img{ transform:scale(1.03); }
+
+.work-frame.is-error{
+  min-height:180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:repeating-linear-gradient(45deg, var(--bg-soft), var(--bg-soft) 10px, var(--bg-elev) 10px, var(--bg-elev) 20px);
+}
+.work-frame.is-error img{ display:none; }
+.work-frame.is-error::after{
+  content:"IMAGE";
+  font-size:10px;
+  letter-spacing:0.24em;
+  color:var(--ink-mute);
+  font-family:var(--font-body-en);
+}
+
+.work-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(20,17,13,0.72) 0%, rgba(20,17,13,0.06) 50%, transparent 68%);
+  opacity:0;
+  transition:opacity 0.4s var(--ease);
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  padding:16px 18px;
+  pointer-events:none;
+}
+.work:hover .work-overlay{ opacity:1; }
+
+.work-view{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:8px 14px;
+  background:var(--bg);
+  color:var(--ink);
+  border-radius:var(--radius-pill);
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  font-family:var(--font-body-en);
+  transform:translateY(8px);
+  transition:transform 0.4s var(--ease);
+}
+html[dir="rtl"] .work-view{ letter-spacing:0; font-size:12px; font-family:var(--font-body); }
+.work:hover .work-view{ transform:translateY(0); }
+
+.work-idx{
+  font-family:var(--font-display-en);
+  font-style:italic;
+  font-size:14px;
+  color:rgba(247,243,236,0.85);
+  font-weight:500;
+  transform:translateY(8px);
+  transition:transform 0.4s var(--ease) 0.05s;
+}
+.work:hover .work-idx{ transform:translateY(0); }
+
+.work-meta{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  padding:14px 4px 0;
+}
+.work-title{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:15.5px;
+  line-height:1.35;
+  color:var(--ink);
+  letter-spacing:-0.01em;
+}
+html[dir="rtl"] .work-title{ letter-spacing:0; }
+.work-cat{
+  flex-shrink:0;
+  font-size:10px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--ink-mute);
+  padding-top:4px;
+  font-family:var(--font-body-en);
+  white-space:nowrap;
+}
+html[dir="rtl"] .work-cat{ letter-spacing:0; font-size:11.5px; font-family:var(--font-body); }
+
+/* ============================================================
+   10. SKILLS
+   ============================================================ */
+.skills-list{ border-top:1px solid var(--border); }
+.skill{
+  position:relative;
+  display:grid;
+  grid-template-columns:64px 1fr auto;
+  align-items:center;
+  gap:clamp(14px,3vw,36px);
+  padding:clamp(18px,2.2vw,28px) 0;
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+  transition:padding-inline-start 0.5s var(--ease);
+}
+.skill::before{
+  content:"";
+  position:absolute;
+  inset-inline-start:0;
+  bottom:-1px;
+  height:1.5px; width:0;
+  background:var(--accent);
+  transition:width 0.75s var(--ease);
+}
+.skill:hover{ padding-inline-start:clamp(0px,1.4vw,22px); }
+.skill:hover::before{ width:100%; }
+.skill-num{
+  font-family:var(--font-display-en);
+  font-style:italic;
+  font-size:14px;
+  font-weight:500;
+  color:var(--ink-mute);
+  transition:color var(--dur-fast) var(--ease);
+}
+.skill:hover .skill-num{ color:var(--accent); }
+.skill-name{
+  font-family:var(--font-display);
+  font-size:clamp(18px,2.6vw,34px);
+  font-weight:500;
+  line-height:1.25;
+  letter-spacing:-0.02em;
+  color:var(--ink-dim);
+  transition:color 0.4s var(--ease);
+}
+html[dir="rtl"] .skill-name{ letter-spacing:0; line-height:1.4; }
+.skill:hover .skill-name{ color:var(--ink); }
+.skill-desc{
+  max-width:30ch;
+  font-size:12.5px;
+  line-height:1.65;
+  color:var(--ink-mute);
+  text-align:end;
+  opacity:0;
+  transform:translateX(14px);
+  transition:opacity 0.45s var(--ease), transform 0.45s var(--ease);
+}
+html[dir="rtl"] .skill-desc{ transform:translateX(-14px); }
+.skill:hover .skill-desc{ opacity:1; transform:translateX(0); }
+
+/* ============================================================
+   11. AI CAPABILITIES
+   ============================================================ */
+.ai-block{
+  background:var(--bg-soft);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.ai-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:clamp(16px,2vw,24px);
+}
+.ai-card{
+  padding:clamp(24px,2.6vw,34px);
+  border:1px solid var(--border-2);
+  border-radius:var(--radius-lg);
+  background:var(--surface-warm);
+  transition:border-color 0.4s var(--ease), transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.ai-card:hover{
+  border-color:var(--accent);
+  transform:translateY(-4px);
+  box-shadow:0 22px 42px -22px rgba(20,17,13,0.22);
+}
+.ai-icon{
+  width:42px; height:42px;
+  border-radius:11px;
+  background:var(--accent-soft);
+  border:1px solid var(--accent-line);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:20px;
+}
+.ai-icon svg{ width:20px; height:20px; stroke:var(--accent); fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.ai-title{
+  font-family:var(--font-display);
+  font-size:clamp(17px,1.7vw,22px);
+  font-weight:600;
+  letter-spacing:-0.01em;
+  margin-bottom:10px;
+  line-height:1.3;
+}
+html[dir="rtl"] .ai-title{ letter-spacing:0; line-height:1.45; }
+.ai-text{ font-size:13.5px; line-height:1.72; color:var(--ink-dim); }
+.ai-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  font-size:10px;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-top:16px;
+  font-weight:600;
+  font-family:var(--font-body-en);
+}
+html[dir="rtl"] .ai-badge{ letter-spacing:0; font-size:11.5px; font-family:var(--font-body); }
+.ai-badge::before{ content:""; width:5px; height:5px; border-radius:50%; background:var(--accent); }
+
+/* ============================================================
+   12. PROCESS
+   ============================================================ */
+.process-wrap{ position:relative; }
+.process-line{
+  position:absolute;
+  top:32px; left:0; right:0;
+  height:1px;
+  background:var(--border-2);
+  z-index:0;
+}
+.process-line span{
+  position:absolute;
+  inset:0 auto 0 0;
+  width:0%;
+  background:var(--accent);
+  transition:width 1.4s var(--ease);
+}
+html[dir="rtl"] .process-line span{ inset:0 0 0 auto; }
+.process-wrap.in .process-line span{ width:100%; }
+.process-steps{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:clamp(14px,2vw,28px);
+}
+.pstep-dot{
+  width:10px; height:10px;
+  border-radius:50%;
+  background:var(--bg);
+  border:1.5px solid var(--border-3);
+  margin-bottom:40px;
+  transition:border-color 0.5s var(--ease), background-color 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+.process-wrap.in .pstep-dot{ border-color:var(--accent); background:var(--accent); }
+.pstep:hover .pstep-dot{ box-shadow:0 0 0 6px var(--accent-soft); }
+.pstep-num{
+  font-family:var(--font-display-en);
+  font-style:italic;
+  font-size:12px;
+  font-weight:500;
+  color:var(--accent);
+  display:block;
+  margin-bottom:10px;
+}
+.pstep-title{
+  font-family:var(--font-display);
+  font-size:clamp(17px,1.7vw,22px);
+  font-weight:600;
+  letter-spacing:-0.01em;
+  margin-bottom:10px;
+  line-height:1.3;
+  color:var(--ink);
+}
+html[dir="rtl"] .pstep-title{ letter-spacing:0; line-height:1.45; }
+.pstep-text{ font-size:13px; line-height:1.7; color:var(--ink-mute); max-width:32ch; }
+
+/* ============================================================
+   13. FOR CLIENTS
+   ============================================================ */
+.for-clients{
+  background:var(--ink);
+  color:var(--bg);
+  padding-block:clamp(60px,8vw,110px);
+  position:relative;
+  overflow:hidden;
+}
+.for-clients::before{
+  content:"";
+  position:absolute;
+  width:min(700px,90vw);
+  aspect-ratio:1;
+  top:-40%;
+  inset-inline-end:-20%;
+  background:radial-gradient(circle, rgba(194,90,58,0.22) 0%, transparent 65%);
+  pointer-events:none;
+}
+.fc-inner{ position:relative; z-index:1; }
+.fc-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:rgba(247,243,236,0.55);
+  font-family:var(--font-body-en);
+}
+html[dir="rtl"] .fc-eyebrow{ letter-spacing:0; font-size:12.5px; font-family:var(--font-body); }
+.fc-eyebrow::before{ content:""; width:22px; height:1px; background:var(--accent); display:block; }
+.fc-title{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(32px,5vw,64px);
+  line-height:1.08;
+  letter-spacing:-0.02em;
+  margin-top:14px;
+  color:var(--bg);
+}
+html[dir="rtl"] .fc-title{ letter-spacing:0; line-height:1.25; font-size:clamp(28px,4.4vw,52px); }
+.fc-title em{ font-style:italic; color:var(--accent); font-weight:500; }
+html[dir="rtl"] .fc-title em{ font-style:normal; font-weight:600; }
+
+.fc-grid{
+  margin-top:clamp(40px,5vw,68px);
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:clamp(22px,3vw,42px);
+}
+.fc-item{
+  padding-top:22px;
+  border-top:1px solid rgba(247,243,236,0.16);
+}
+.fc-num{
+  font-family:var(--font-display-en);
+  font-style:italic;
+  font-size:14px;
+  font-weight:500;
+  color:var(--accent);
+  display:block;
+  margin-bottom:14px;
+}
+.fc-item h3{
+  font-family:var(--font-display);
+  font-size:clamp(18px,1.9vw,24px);
+  font-weight:600;
+  margin-bottom:10px;
+  color:var(--bg);
+  line-height:1.3;
+}
+html[dir="rtl"] .fc-item h3{ line-height:1.45; }
+.fc-item p{
+  font-size:14px;
+  line-height:1.75;
+  color:rgba(247,243,236,0.7);
+}
+.fc-actions{
+  margin-top:clamp(40px,5vw,64px);
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.fc-actions .btn-primary{
+  --btn-bg: var(--bg);
+  --btn-fg: var(--ink);
+  --btn-bd: var(--bg);
+}
+.fc-actions .btn-primary:hover{ color:#fff; }
+.fc-actions .btn-ghost{
+  --btn-bd: rgba(247,243,236,0.28);
+  --btn-fg: var(--bg);
+}
+.fc-actions .btn-ghost:hover{ color:#fff; }
+
+/* ============================================================
+   14. CONTACT
+   ============================================================ */
+.contact{
+  padding-block:clamp(70px,9vw,130px);
+  text-align:center;
+  background:var(--bg);
+}
+.contact-inner{ display:flex; flex-direction:column; align-items:center; }
+.contact-title{
+  font-family:var(--font-display);
+  font-size:clamp(34px,6.4vw,92px);
+  font-weight:600;
+  line-height:1.02;
+  letter-spacing:-0.03em;
+  margin-top:20px;
+}
+html[dir="rtl"] .contact-title{ letter-spacing:0; line-height:1.2; font-size:clamp(28px,5vw,72px); }
+.contact-title em{ font-style:italic; color:var(--accent); font-weight:500; }
+html[dir="rtl"] .contact-title em{ font-style:normal; font-weight:600; }
+.contact-sub{
+  margin-top:24px;
+  max-width:46ch;
+  font-size:clamp(15px,1.15vw,17.5px);
+  line-height:1.72;
+  color:var(--ink-dim);
+}
+.contact-actions{ margin-top:38px; display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+.contact-note{
+  margin-top:26px;
+  font-size:12.5px;
+  color:var(--ink-mute);
+}
+
+/* ============================================================
+   15. FOOTER
+   ============================================================ */
+.footer{
+  border-top:1px solid var(--border);
+  padding:44px 0 40px;
+  background:var(--bg-soft);
+}
+.footer-inner{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.footer-brand{
+  font-family:var(--font-display-en);
+  font-style:italic;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:-0.01em;
+}
+.footer-brand sup{ font-size:9px; color:var(--accent); font-style:normal; }
+.footer-copy{
+  font-size:12px;
+  color:var(--ink-mute);
+}
+.footer-tag{
+  font-size:12px;
+  color:var(--ink-dim);
+}
+.footer-tag b{ color:var(--accent); font-weight:600; }
+
+/* ============================================================
+   16. FLOATING WHATSAPP
+   ============================================================ */
+.wa-float{
+  position:fixed;
+  inset-inline-end:max(18px, env(safe-area-inset-right));
+  bottom:max(18px, env(safe-area-inset-bottom));
+  z-index:850;
+  width:54px; height:54px;
+  border-radius:50%;
+  background:#25D366;
+  border:1px solid #25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 18px 36px -14px rgba(37,211,102,0.5);
+  transition:transform var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+  opacity:0;
+  transform:translateY(16px) scale(0.9);
+  animation:waIn 0.7s var(--ease) 1.2s forwards;
+}
+@keyframes waIn{ to{ opacity:1; transform:translateY(0) scale(1); } }
+.wa-float:hover{ background:#1da851; border-color:#1da851; transform:translateY(-3px) scale(1.05); }
+.wa-float svg{ width:26px; height:26px; fill:#fff; }
+
+/* ============================================================
+   17. LIGHTBOX
+   ============================================================ */
+.lightbox{
+  position:fixed;
+  inset:0;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(16px,3vw,44px);
+  opacity:0;
+  visibility:hidden;
+  transition:opacity 0.4s var(--ease), visibility 0.4s;
+}
+.lightbox.open{ opacity:1; visibility:visible; }
+.lb-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(20,17,13,0.94);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+}
+.lb-inner{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:clamp(20px,3vw,42px);
+  width:100%;
+  max-width:1360px;
+  max-height:100%;
+  align-items:center;
+}
+.lb-figure{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  max-height:82vh;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:#14110d;
+  border:1px solid rgba(247,243,236,0.14);
+  transform:scale(0.96);
+  opacity:0;
+  transition:transform 0.5s var(--ease), opacity 0.5s var(--ease);
+}
+.lightbox.open .lb-figure{ transform:scale(1); opacity:1; }
+.lb-figure img{
+  max-width:100%;
+  max-height:82vh;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  display:block;
+}
+.lb-side{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  max-height:82vh;
+  overflow-y:auto;
+  padding-inline-end:4px;
+  color:var(--bg);
+}
+.lb-cat{
+  font-size:11px;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:var(--accent);
+  font-family:var(--font-body-en);
+  font-weight:600;
+}
+html[dir="rtl"] .lb-cat{ letter-spacing:0; font-size:12px; font-family:var(--font-body); }
+.lb-title{
+  font-family:var(--font-display);
+  font-size:clamp(20px,2.1vw,28px);
+  font-weight:600;
+  line-height:1.2;
+  letter-spacing:-0.01em;
+}
+html[dir="rtl"] .lb-title{ letter-spacing:0; line-height:1.4; }
+.lb-desc{ font-size:13.5px; line-height:1.75; color:rgba(247,243,236,0.75); }
+.lb-count{
+  font-size:11.5px;
+  color:rgba(247,243,236,0.5);
+  border-top:1px solid rgba(247,243,236,0.14);
+  padding-top:14px;
+}
+.lb-side .btn{ width:100%; }
+.lb-source{
+  font-size:11.5px;
+  color:rgba(247,243,236,0.55);
+  border-bottom:1px solid transparent;
+  transition:color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  align-self:flex-start;
+}
+.lb-source:hover{ color:var(--accent); border-color:var(--accent); }
+
+.lb-close{
+  position:absolute;
+  top:clamp(14px,2.4vw,28px);
+  inset-inline-end:clamp(14px,2.4vw,28px);
+  z-index:3;
+  width:46px; height:46px;
+  border-radius:50%;
+  border:1px solid rgba(247,243,236,0.24);
+  background:rgba(20,17,13,0.7);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.lb-close:hover{ background:var(--accent); border-color:var(--accent); transform:rotate(90deg); }
+.lb-close svg{ width:16px; height:16px; stroke:var(--bg); stroke-width:2; stroke-linecap:round; }
+
+.lb-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:3;
+  width:50px; height:50px;
+  border-radius:50%;
+  border:1px solid rgba(247,243,236,0.24);
+  background:rgba(20,17,13,0.7);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.lb-nav:hover{ background:var(--bg); border-color:var(--bg); }
+.lb-nav:hover svg{ stroke:var(--ink); }
+.lb-nav svg{ width:18px; height:18px; stroke:var(--bg); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.lb-prev{ inset-inline-start:clamp(12px,2.4vw,28px); }
+.lb-next{ inset-inline-end:clamp(12px,2.4vw,28px); }
+
+/* ============================================================
+   18. SCROLL REVEAL
+   ============================================================ */
+.reveal{
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+.reveal.in{ opacity:1; transform:translateY(0); }
+.reveal-d1{ transition-delay:0.08s; }
+.reveal-d2{ transition-delay:0.16s; }
+.reveal-d3{ transition-delay:0.24s; }
+
+/* ============================================================
+   19. RESPONSIVE
+   ============================================================ */
+@media (max-width:1180px){
+  .highlights-grid{ grid-template-columns:repeat(2, 1fr); row-gap:32px; }
+  .about-grid{ grid-template-columns:1fr; }
+  .ai-grid{ grid-template-columns:repeat(2, 1fr); }
+  .process-steps{ grid-template-columns:repeat(3, 1fr); row-gap:40px; }
+  .process-line{ display:none; }
+  .pstep-dot{ margin-bottom:20px; }
+  .fc-grid{ grid-template-columns:1fr; gap:28px; }
+  .fc-item{ padding-top:0; border-top:none; padding-inline-start:0; }
+  .fc-item h3{ margin-top:8px; }
+}
+
+@media (max-width:960px){
+  .nav-links{ display:none; }
+  .nav-toggle{ display:flex; }
+  .nav-right .btn-ghost{ display:none; }
+
+  .welcome-inner{ grid-template-columns:1fr; gap:48px; }
+  .welcome-visual{ aspect-ratio:4/3.6; max-width:540px; width:100%; margin-inline:auto; }
+  .wv-s1{ width:26%; inset-inline-start:auto; inset-inline-end:6%; bottom:-6%; }
+  .wv-s2{ width:22%; }
+
+  .cat-head{ grid-template-columns:1fr; gap:12px; }
+  .cat-desc{ text-align:start; }
+  .cat-count{ justify-self:start; }
+
+  .lb-inner{ grid-template-columns:1fr; gap:18px; }
+  .lb-figure{ max-height:46vh; }
+  .lb-figure img{ max-height:46vh; }
+  .lb-side{ max-height:none; }
+  .lb-nav{ top:auto; bottom:calc(50% + 8px); transform:none; }
+}
+
+@media (max-width:700px){
+  .process-steps{ grid-template-columns:1fr; row-gap:0; }
+  .pstep{ position:relative; padding:22px 0; padding-inline-start:28px; border-bottom:1px solid var(--border); }
+  .pstep-dot{ position:absolute; inset-inline-start:0; top:26px; margin:0; }
+  .pstep-text{ max-width:none; }
+
+  .skill{ grid-template-columns:44px 1fr; gap:14px; }
+  .skill-desc{
+    grid-column:2 / -1;
+    text-align:start;
+    opacity:1;
+    transform:none;
+    margin-top:8px;
+    max-width:none;
+  }
+  .skill:hover{ padding-inline-start:0; }
+
+  .welcome-actions .btn,
+  .contact-actions .btn,
+  .fc-actions .btn{ flex:1 1 100%; }
+
+  .lb-nav{ width:42px; height:42px; }
+  .lb-close{ width:42px; height:42px; }
+  .lb-prev{ inset-inline-start:8px; }
+  .lb-next{ inset-inline-end:8px; }
+
+  .footer-inner{ flex-direction:column; align-items:flex-start; gap:12px; }
+
+  .ai-grid{ grid-template-columns:1fr; }
+}
+
+@media (max-width:420px){
+  .highlights-grid{ grid-template-columns:1fr; row-gap:24px; }
+  .lang-btn{ padding:6px 10px; font-size:10.5px; }
+  .cat-num{ display:none; }
+}
+
+/* ============================================================
+   20. REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:0.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.001ms !important;
+    scroll-behavior:auto !important;
+  }
+  .wv-main, .wv-small{ opacity:1; transform:none; animation:none; }
+  .reveal{ opacity:1; transform:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo" aria-label="YUOSSEF">YUOSSEF<sup>®</sup></a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#top"       class="nav-link active" data-nav data-i18n="nav_home">الرئيسية</a>
+      <a href="#about"     class="nav-link" data-nav data-i18n="nav_about">نبذة</a>
+      <a href="#portfolio" class="nav-link" data-nav data-i18n="nav_work">الأعمال</a>
+      <a href="#skills"    class="nav-link" data-nav data-i18n="nav_skills">المهارات</a>
+      <a href="#contact"   class="nav-link" data-nav data-i18n="nav_contact">تواصل</a>
+    </nav>
+
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Language / اللغة">
+        <button class="lang-btn" data-lang="ar" type="button">AR</button>
+        <button class="lang-btn active" data-lang="en" type="button">EN</button>
+      </div>
+
+      <a class="btn btn-ghost btn-sm wa-link" target="_blank" rel="noopener noreferrer" href="#">
+        <span data-i18n="nav_talk">تواصل معي ↗</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <nav class="mobile-links" aria-label="Mobile">
+    <a href="#top"       data-mobile-nav data-i18n="nav_home">الرئيسية</a>
+    <a href="#about"     data-mobile-nav data-i18n="nav_about">نبذة</a>
+    <a href="#portfolio" data-mobile-nav data-i18n="nav_work">الأعمال</a>
+    <a href="#skills"    data-mobile-nav data-i18n="nav_skills">المهارات</a>
+    <a href="#contact"   data-mobile-nav data-i18n="nav_contact">تواصل</a>
+  </nav>
+  <div class="mobile-foot">
+    <a class="btn btn-accent wa-link" target="_blank" rel="noopener noreferrer" href="#">
+      <span data-i18n="nav_start_convo">ابدأ محادثة ↗</span>
+    </a>
+    <span style="font-size:13px;color:var(--ink-mute);text-align:center" data-i18n="mobile_foot">مصر — متاح للمشاريع</span>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============================================================
+     WELCOME HERO
+     ============================================================ -->
+<section class="welcome">
+  <div class="welcome-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="welcome-inner">
+
+      <div class="welcome-copy">
+        <span class="welcome-hello" data-i18n="hero_hello">أهلاً بيك ✦</span>
+
+        <h1 class="welcome-title">
+          <span data-i18n="hero_t1">أنا يوسف،</span><br>
+          <em data-i18n="hero_t2">مصمم</em>
+          <span data-i18n="hero_t3">جرافيك</span><br>
+          <span data-i18n="hero_t4">بالذكاء الاصطناعي.</span>
+        </h1>
+
+        <p class="welcome-lead" data-i18n="hero_lead">
+          بحوّل الأفكار لصور تخلّي الناس توقف وتنظر — تصاميم إعلانية، صور منتجات، فن رقمي، وفيديوهات بالذكاء الاصطناعي. منذ أكثر من <strong>خمس سنوات</strong> وأنا أرسم البصريات اللي بتفرق.
+        </p>
+
+        <div class="welcome-actions">
+          <a href="#portfolio" class="btn btn-primary"><span data-i18n="hero_cta1">استكشف أعمالي ↓</span></a>
+          <a class="btn btn-ghost wa-link" target="_blank" rel="noopener noreferrer" href="#">
+            <span data-i18n="hero_cta2">كلّمني على واتساب ↗</span>
+          </a>
+        </div>
+
+        <div class="welcome-signature">
+          <span class="sig-line" aria-hidden="true"></span>
+          <span class="sig-name">YUOSSEF</span>
+        </div>
+      </div>
+
+      <div class="welcome-visual">
+        <div class="wv-main">
+          <img src="https://i.postimg.cc/cC8vgH65/Cera-Ve-moisturizer-poster-design-20261009203611.jpg"
+               alt="CeraVe moisturizer poster design by YUOSSEF"
+               fetchpriority="high" decoding="async">
+        </div>
+        <div class="wv-small wv-s1">
+          <img src="https://i.postimg.cc/8zdrmjw8/Picsart-26-10-10-17-19-54-069.jpg"
+               alt="AI-assisted creative visual" loading="lazy" decoding="async">
+        </div>
+        <div class="wv-small wv-s2">
+          <img src="https://i.postimg.cc/W4XFxCBb/Picsart-26-10-10-17-21-53-776.png"
+               alt="Creative composition study" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HIGHLIGHT NUMBERS
+     ============================================================ -->
+<section class="highlights">
+  <div class="wrap">
+    <div class="highlights-grid">
+      <div class="hl reveal">
+        <span class="hl-num" data-count="5">0</span><span class="hl-plus">+</span>
+        <span class="hl-label" data-i18n="hl1">سنوات خبرة في التصميم</span>
+      </div>
+      <div class="hl reveal reveal-d1">
+        <span class="hl-num" data-count="80">0</span><span class="hl-plus">+</span>
+        <span class="hl-label" data-i18n="hl2">عميل تعاملنا معه</span>
+      </div>
+      <div class="hl reveal reveal-d2">
+        <span class="hl-num" data-count="300">0</span><span class="hl-plus">+</span>
+        <span class="hl-label" data-i18n="hl3">تصميم تم إنشاؤه</span>
+      </div>
+      <div class="hl reveal reveal-d3">
+        <span class="hl-num" data-count="27">0</span><span class="hl-plus"></span>
+        <span class="hl-label" data-i18n="hl4">عمل في البورتفوليو</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+
+      <div>
+        <span class="eyebrow reveal" data-i18n="about_eyebrow">نبذة عني</span>
+        <h2 class="about-title reveal reveal-d1">
+          <span data-i18n="about_t1">التصميم أكثر من</span>
+          <em data-i18n="about_t2">ما تراه.</em>
+        </h2>
+
+        <div class="about-copy">
+          <p class="reveal reveal-d2" data-i18n="about_p1">
+            أنا يوسف، مصمم جرافيك مستقل، بشتغل على تقاطع التصميم، الذكاء الاصطناعي، والسرد البصري.
+          </p>
+          <p class="reveal reveal-d2" data-i18n="about_p2">
+            بستخدم سير عمل إبداعي مدعوم بالذكاء الاصطناعي لتطوير تصاميم إعلانية، تجربة اتجاهات فنية مميزة، وتحويل الأفكار إلى مفاهيم بصرية مقنعة. أدواتي بتجمع بين الذكاء التوليدي، أدوبي فوتوشوب، وإنتاج الفيديو — وكلها مدفوعة ببرومبيتات مكتوبة بعناية.
+          </p>
+          <p class="reveal reveal-d3" data-i18n="about_p3">
+            بخبرة تتجاوز الخمس سنوات، ومع عشرات العملاء في مجالات مختلفة، هدفي بسيط: أصنع أعمال تلفت الانتباه، تُوصل الفكرة، وتترك أثراً دائماً.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-media reveal reveal-d2">
+        <img src="https://i.postimg.cc/Gts482H0/FB-IMG-1791653550120.jpg"
+             alt="عمل إبداعي ليوسف"
+             loading="lazy" decoding="async">
+        <span class="about-media-tag">
+          <i aria-hidden="true"></i>
+          <span data-i18n="about_tag">مصمم مستقل · مصر</span>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO INTRO
+     ============================================================ -->
+<section class="portfolio-intro" id="portfolio">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:0">
+      <div>
+        <span class="eyebrow" data-i18n="port_eyebrow">الأعمال</span>
+        <h2 class="section-title" data-i18n="port_title">مجموعتي الكاملة.</h2>
+        <p class="section-sub" data-i18n="port_sub">
+          27 عملاً موزّعاً في أربع مجموعات — إعلانات، صور منتجات، فن ذكاء اصطناعي، وأفكار إبداعية. كل صورة في إطارها الخاص، منفصلة عن الأخرى. اضغط على أي صورة لعرضها بالحجم الكامل.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATEGORY 01 — ADVERTISING
+     ============================================================ -->
+<section class="cat-section" id="cat-advertising">
+  <div class="wrap">
+    <header class="cat-head reveal">
+      <span class="cat-num">01</span>
+      <div>
+        <h3 class="cat-title" data-i18n="c1_t">إعلانات</h3>
+        <p class="cat-desc" data-i18n="c1_d">أفكار إعلانية بصرية، تكوينات جريئة، وحملات مصمّمة عشان تلفت الانتباه.</p>
+      </div>
+      <span class="cat-count"><span>11</span> <em style="font-style:normal" data-i18n="c_works">عمل</em></span>
+    </header>
+    <div class="gallery" data-gallery="advertising" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATEGORY 02 — AI ART
+     ============================================================ -->
+<section class="cat-section" id="cat-ai-art">
+  <div class="wrap">
+    <header class="cat-head reveal">
+      <span class="cat-num">02</span>
+      <div>
+        <h3 class="cat-title" data-i18n="c2_t">فن الذكاء الاصطناعي</h3>
+        <p class="cat-desc" data-i18n="c2_d">تجارب توليدية، تكوينات فنية، واستكشافات بصرية بدقة عالية.</p>
+      </div>
+      <span class="cat-count"><span>8</span> <em style="font-style:normal" data-i18n="c_works">عمل</em></span>
+    </header>
+    <div class="gallery" data-gallery="ai-art" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATEGORY 03 — CREATIVE CONCEPTS
+     ============================================================ -->
+<section class="cat-section" id="cat-concepts">
+  <div class="wrap">
+    <header class="cat-head reveal">
+      <span class="cat-num">03</span>
+      <div>
+        <h3 class="cat-title" data-i18n="c3_t">أفكار إبداعية</h3>
+        <p class="cat-desc" data-i18n="c3_d">دراسات بصرية حرة، استكشافات في اللون والملمس، وأفكار في مرحلة التجريب.</p>
+      </div>
+      <span class="cat-count"><span>7</span> <em style="font-style:normal" data-i18n="c_works">عمل</em></span>
+    </header>
+    <div class="gallery" data-gallery="concepts" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATEGORY 04 — PRODUCT VISUALS
+     ============================================================ -->
+<section class="cat-section" id="cat-product">
+  <div class="wrap">
+    <header class="cat-head reveal">
+      <span class="cat-num">04</span>
+      <div>
+        <h3 class="cat-title" data-i18n="c4_t">صور منتجات</h3>
+        <p class="cat-desc" data-i18n="c4_d">تكوينات فاخرة تُبرِز المنتج كبطل الصورة — بأسلوب نظيف وعصري.</p>
+      </div>
+      <span class="cat-count"><span>1</span> <em style="font-style:normal" data-i18n="c_works">عمل</em></span>
+    </header>
+    <div class="gallery cols-2" data-gallery="product" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+     ============================================================ -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <div>
+        <span class="eyebrow" data-i18n="sk_eyebrow">القدرات</span>
+        <h2 class="section-title" data-i18n="sk_title">ما أضيفه للإطار.</h2>
+        <p class="section-sub" data-i18n="sk_sub">مجموعة عملية من القدرات الإبداعية والتقنية اللي بتُطبّق في كل مشروع.</p>
+      </div>
+    </header>
+
+    <ul class="skills-list reveal">
+      <li class="skill">
+        <span class="skill-num">01</span>
+        <span class="skill-name" data-i18n="sk1">تصميم بصري بالذكاء الاصطناعي</span>
+        <span class="skill-desc" data-i18n="sk1d">سير عمل توليدي مطبّق على مشاكل تصميم حقيقية.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">02</span>
+        <span class="skill-name" data-i18n="sk2">هندسة البرومبيت</span>
+        <span class="skill-desc" data-i18n="sk2d">صياغة اللغة للتحكم في الأسلوب، الإضاءة، والتفاصيل.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">03</span>
+        <span class="skill-name" data-i18n="sk3">توليد الصور بالذكاء الاصطناعي</span>
+        <span class="skill-desc" data-i18n="sk3d">توجيه الأدوات التوليدية نحو هدف بصري محدد.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">04</span>
+        <span class="skill-name" data-i18n="sk4">إنتاج فيديو بالذكاء الاصطناعي</span>
+        <span class="skill-desc" data-i18n="sk4d">فيديوهات قصيرة ومؤثرات حركية بالذكاء الاصطناعي.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">05</span>
+        <span class="skill-name" data-i18n="sk5">تصميم بالفوتوشوب</span>
+        <span class="skill-desc" data-i18n="sk5d">تنقيح، تركيب، وإخراج احترافي بمعايير المجال.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">06</span>
+        <span class="skill-name" data-i18n="sk6">أفكار إعلانية</span>
+        <span class="skill-desc" data-i18n="sk6d">تفكير يبدأ من الفكرة ويدور حول رسالة واضحة.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">07</span>
+        <span class="skill-name" data-i18n="sk7">صور المنتجات</span>
+        <span class="skill-desc" data-i18n="sk7d">تكوينات وتأطير فاخر يركّز على المنتج.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">08</span>
+        <span class="skill-name" data-i18n="sk8">حملات السوشيال ميديا</span>
+        <span class="skill-desc" data-i18n="sk8d">تصاميم مصمّمة لبيئات التمرير السريع.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">09</span>
+        <span class="skill-name" data-i18n="sk9">السرد البصري</span>
+        <span class="skill-desc" data-i18n="sk9d">بناء صورة تحمل حكاية.</span>
+      </li>
+      <li class="skill">
+        <span class="skill-num">10</span>
+        <span class="skill-name" data-i18n="sk10">الإدارة الفنية الإبداعية</span>
+        <span class="skill-desc" data-i18n="sk10d">قيادة الفكرة من أول تصور حتى الإطار النهائي.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     AI CAPABILITIES
+     ============================================================ -->
+<section class="section ai-block" id="ai">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <div>
+        <span class="eyebrow" data-i18n="ai_eyebrow">الذكاء الاصطناعي + التصميم</span>
+        <h2 class="section-title" data-i18n="ai_title">حيث يلتقي الذكاء بالحرفة.</h2>
+        <p class="section-sub" data-i18n="ai_sub">مجموعة مهارات متخصصة بتجمع بين هندسة البرومبيت المتقدمة وأدوات التصميم الاحترافية.</p>
+      </div>
+    </header>
+
+    <div class="ai-grid reveal">
+
+      <div class="ai-card">
+        <div class="ai-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="ai-title" data-i18n="ai1_t">هندسة البرومبيت</h3>
+        <p class="ai-text" data-i18n="ai1_d">كتابة برومبيتات دقيقة ومتعددة الطبقات تعطي أدوات الذكاء الاصطناعي توجيهاً واضحاً — تتحكم في الأسلوب، التكوين، الإضاءة، والتفاصيل في كل عملية توليد.</p>
+        <span class="ai-badge" data-i18n="ai1_b">نقطة قوة أساسية</span>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <h3 class="ai-title" data-i18n="ai2_t">توليد الصور بالذكاء الاصطناعي</h3>
+        <p class="ai-text" data-i18n="ai2_d">إنتاج صور أصلية عالية الجودة بالذكاء التوليدي — من الأفكار الإعلانية وصور المنتجات إلى التكوينات الفنية.</p>
+        <span class="ai-badge" data-i18n="ai2_b">أداة يومية</span>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M22 8l-6 4 6 4V8z"/></svg>
+        </div>
+        <h3 class="ai-title" data-i18n="ai3_t">إنتاج الفيديو بالذكاء الاصطناعي</h3>
+        <p class="ai-text" data-i18n="ai3_d">إنشاء محتوى فيديو قصير بالذكاء الاصطناعي — صور متحركة، إعلانات حركية، ومقاطع جاهزة للسوشيال ميديا.</p>
+        <span class="ai-badge" data-i18n="ai3_b">خدمة جديدة</span>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 10h16M10 4v16"/></svg>
+        </div>
+        <h3 class="ai-title" data-i18n="ai4_t">تصميم بالفوتوشوب</h3>
+        <p class="ai-text" data-i18n="ai4_d">أعمال فوتوشوب احترافية — تنقيح، تركيب، تصحيح لوني، وتصاميم جاهزة للطباعة وفق معايير المجال.</p>
+        <span class="ai-badge" data-i18n="ai4_b">أكثر من 5 سنوات</span>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 17l-6.5 4L7.5 13.5 2 9h7z"/></svg>
+        </div>
+        <h3 class="ai-title" data-i18n="ai5_t">حملات إعلانية</h3>
+        <p class="ai-text" data-i18n="ai5_d">حملات بصرية كاملة مبنية على فكرة واحدة — متكيّفة مع كل الصيغ والمنصات وقنوات التواصل.</p>
+        <span class="ai-badge" data-i18n="ai5_b">حزمة كاملة</span>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>
+        </div>
+        <h3 class="ai-title" data-i18n="ai6_t">الإدارة الفنية الإبداعية</h3>
+        <p class="ai-text" data-i18n="ai6_d">قيادة المشروع من أول بريف حتى الصور النهائية — تحديد النبرة، اللوحة اللونية، واللغة البصرية من البداية.</p>
+        <span class="ai-badge" data-i18n="ai6_b">من البداية للنهاية</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS
+     ============================================================ -->
+<section class="section" id="process">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <div>
+        <span class="eyebrow" data-i18n="proc_eyebrow">العملية</span>
+        <h2 class="section-title" data-i18n="proc_title">من الفكرة إلى الإطار.</h2>
+        <p class="section-sub" data-i18n="proc_sub">وصف عام لكيفية انتقال المفهوم من أول فكرة إلى صورة نهائية.</p>
+      </div>
+    </header>
+
+    <div class="process-wrap reveal" id="processWrap">
+      <div class="process-line" aria-hidden="true"><span></span></div>
+      <div class="process-steps">
+        <div class="pstep">
+          <div class="pstep-dot" aria-hidden="true"></div>
+          <span class="pstep-num">01</span>
+          <h3 class="pstep-title" data-i18n="p1_t">الفكرة</h3>
+          <p class="pstep-text" data-i18n="p1_d">فهم الرسالة، الجمهور، والهدف الإبداعي.</p>
+        </div>
+        <div class="pstep">
+          <div class="pstep-dot" aria-hidden="true"></div>
+          <span class="pstep-num">02</span>
+          <h3 class="pstep-title" data-i18n="p2_t">الاتجاه</h3>
+          <p class="pstep-text" data-i18n="p2_d">تطوير المفهوم البصري، التكوين، والاتجاه الفني.</p>
+        </div>
+        <div class="pstep">
+          <div class="pstep-dot" aria-hidden="true"></div>
+          <span class="pstep-num">03</span>
+          <h3 class="pstep-title" data-i18n="p3_t">الإنشاء</h3>
+          <p class="pstep-text" data-i18n="p3_d">استخدام أدوات مدعومة بالذكاء الاصطناعي وتقنيات تصميم لتطوير العمل.</p>
+        </div>
+        <div class="pstep">
+          <div class="pstep-dot" aria-hidden="true"></div>
+          <span class="pstep-num">04</span>
+          <h3 class="pstep-title" data-i18n="p4_t">الصقل</h3>
+          <p class="pstep-text" data-i18n="p4_d">مراجعة التسلسل البصري، التفاصيل، التايبوغرافي، والعرض النهائي.</p>
+        </div>
+        <div class="pstep">
+          <div class="pstep-dot" aria-hidden="true"></div>
+          <span class="pstep-num">05</span>
+          <h3 class="pstep-title" data-i18n="p5_t">التسليم</h3>
+          <p class="pstep-text" data-i18n="p5_d">تجهيز العمل المعتمد للاستخدام المطلوب.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOR CLIENTS
+     ============================================================ -->
+<section class="for-clients" id="clients">
+  <div class="wrap fc-inner">
+    <span class="fc-eyebrow reveal" data-i18n="fc_eyebrow">للعملاء</span>
+    <h2 class="fc-title reveal reveal-d1">
+      <span data-i18n="fc_t1">مرحباً بيك كعميل —</span><br>
+      <em data-i18n="fc_t2">خلينا نبني حاجة تستحق النظر.</em>
+    </h2>
+
+    <div class="fc-grid">
+      <div class="fc-item reveal reveal-d1">
+        <span class="fc-num">01</span>
+        <h3 data-i18n="fc1_t">فكرة تبدأ منك</h3>
+        <p data-i18n="fc1_d">قولّي على فكرتك، جمهورك، والهدف من الإعلان — وأنا أحوّلها لتصميم يخدم رسالتك.</p>
+      </div>
+      <div class="fc-item reveal reveal-d2">
+        <span class="fc-num">02</span>
+        <h3 data-i18n="fc2_t">تنفيذ احترافي</h3>
+        <p data-i18n="fc2_d">من البرومبيت للتكوين للتسليم — كل خطوة بمعايير مدروسة وبتفاصيل مصقولة.</p>
+      </div>
+      <div class="fc-item reveal reveal-d3">
+        <span class="fc-num">03</span>
+        <h3 data-i18n="fc3_t">تواصل مباشر</h3>
+        <p data-i18n="fc3_d">بدون وسطاء، بدون نماذج معقّدة — كلّمني مباشرة على واتساب ونبدأ من أول رسالة.</p>
+      </div>
+    </div>
+
+    <div class="fc-actions reveal reveal-d3">
+      <a class="btn btn-primary wa-link" target="_blank" rel="noopener noreferrer" href="#">
+        <span data-i18n="fc_cta1">ابدأ مشروعك الآن ↗</span>
+      </a>
+      <a class="btn btn-ghost" href="#portfolio">
+        <span data-i18n="fc_cta2">شاهد أعمالي أولاً</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <span class="eyebrow reveal" data-i18n="ct_eyebrow">تواصل</span>
+      <h2 class="contact-title reveal reveal-d1">
+        <span data-i18n="ct_t1">عندك فكرة؟</span><br>
+        <em data-i18n="ct_t2">لنحوّلها لعمل بصري.</em>
+      </h2>
+      <p class="contact-sub reveal reveal-d2" data-i18n="ct_sub">
+        عندك مشروع، حملة، أو فكرة تستحق الاستكشاف؟ خلينا نتكلم عنها.
+      </p>
+      <div class="contact-actions reveal reveal-d2">
+        <a class="btn btn-accent wa-link" target="_blank" rel="noopener noreferrer" href="#">
+          <span data-i18n="ct_cta">ابدأ محادثة على واتساب ↗</span>
+        </a>
+      </div>
+      <p class="contact-note reveal reveal-d3" data-i18n="ct_note">
+        يفتح مباشرة على واتساب · ‎+20 115 401 2821
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span class="footer-brand">YUOSSEF<sup>®</sup></span>
+    <span class="footer-copy" data-i18n="foot_copy">© 2026 يوسف. جميع الحقوق محفوظة.</span>
+    <span class="footer-tag" data-i18n="foot_tag">مبني على الأفكار. <b>مصمم ليتميّز.</b></span>
+  </div>
+</footer>
+
+</main>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="wa-float wa-link" target="_blank" rel="noopener noreferrer"
+   aria-label="تواصل مع يوسف على واتساب" title="تواصل مع يوسف على واتساب" href="#">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="عارض الأعمال">
+  <div class="lb-backdrop" data-lb-close></div>
+
+  <button class="lb-close" data-lb-close aria-label="إغلاق" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="السابق" type="button">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="التالي" type="button">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+
+  <div class="lb-inner">
+    <figure class="lb-figure">
+      <img id="lbImg" src="" alt="" decoding="async">
+    </figure>
+    <aside class="lb-side">
+      <span class="lb-cat" id="lbCat"></span>
+      <h3 class="lb-title" id="lbTitle"></h3>
+      <p class="lb-desc" id="lbDesc"></p>
+      <span class="lb-count" id="lbCount"></span>
+      <a class="btn btn-accent btn-sm wa-link" target="_blank" rel="noopener noreferrer" href="#">
+        <span data-i18n="lb_cta">ناقش مشروعاً مشابهاً ↗</span>
+      </a>
+      <a class="lb-source" id="lbSource" target="_blank" rel="noopener noreferrer" href="#" data-i18n="lb_src">عرض الصفحة الأصلية ↗</a>
+    </aside>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   YUOSSEF — PORTFOLIO
+   v3 · Warm editorial · Static grid · Bilingual · Welcome
+   ============================================================ */
+(function () {
+  'use strict';
+
+  /* ----------------------------------------------------------
+     0. WHATSAPP URL
+     ---------------------------------------------------------- */
+  const WHATSAPP_URL = 'https://wa.me/201154012821?text=' +
+    encodeURIComponent('أهلاً يوسف، شوفت شغلك على الموقع وحابب أتكلم معاك بخصوص مشروع تصميم.');
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $  = (s, c) => (c || document).querySelector(s);
+  const $$ = (s, c) => Array.prototype.slice.call((c || document).querySelectorAll(s));
+
+  /* ----------------------------------------------------------
+     1. I18N DICTIONARY
+     ---------------------------------------------------------- */
+  const I18N = {
+    ar: {
+      nav_home:'الرئيسية', nav_about:'نبذة', nav_work:'الأعمال', nav_skills:'المهارات', nav_contact:'تواصل',
+      nav_talk:'تواصل معي ↗', nav_start_convo:'ابدأ محادثة ↗',
+      mobile_foot:'مصر — متاح للمشاريع',
+
+      hero_hello:'أهلاً بيك ✦',
+      hero_t1:'أنا يوسف،', hero_t2:'مصمم', hero_t3:'جرافيك', hero_t4:'بالذكاء الاصطناعي.',
+      hero_lead:'بحوّل الأفكار لصور تخلّي الناس توقف وتنظر — تصاميم إعلانية، صور منتجات، فن رقمي، وفيديوهات بالذكاء الاصطناعي. منذ أكثر من <strong>خمس سنوات</strong> وأنا أرسم البصريات اللي بتفرق.',
+      hero_cta1:'استكشف أعمالي ↓', hero_cta2:'كلّمني على واتساب ↗',
+
+      hl1:'سنوات خبرة في التصميم', hl2:'عميل تعاملنا معه',
+      hl3:'تصميم تم إنشاؤه', hl4:'عمل في البورتفوليو',
+
+      about_eyebrow:'نبذة عني',
+      about_t1:'التصميم أكثر من', about_t2:'ما تراه.',
+      about_p1:'أنا يوسف، مصمم جرافيك مستقل، بشتغل على تقاطع التصميم، الذكاء الاصطناعي، والسرد البصري.',
+      about_p2:'بستخدم سير عمل إبداعي مدعوم بالذكاء الاصطناعي لتطوير تصاميم إعلانية، تجربة اتجاهات فنية مميزة، وتحويل الأفكار إلى مفاهيم بصرية مقنعة. أدواتي بتجمع بين الذكاء التوليدي، أدوبي فوتوشوب، وإنتاج الفيديو — وكلها مدفوعة ببرومبيتات مكتوبة بعناية.',
+      about_p3:'بخبرة تتجاوز الخمس سنوات، ومع عشرات العملاء في مجالات مختلفة، هدفي بسيط: أصنع أعمال تلفت الانتباه، تُوصل الفكرة، وتترك أثراً دائماً.',
+      about_tag:'مصمم مستقل · مصر',
+
+      port_eyebrow:'الأعمال',
+      port_title:'مجموعتي الكاملة.',
+      port_sub:'27 عملاً موزّعاً في أربع مجموعات — إعلانات، صور منتجات، فن ذكاء اصطناعي، وأفكار إبداعية. كل صورة في إطارها الخاص، منفصلة عن الأخرى. اضغط على أي صورة لعرضها بالحجم الكامل.',
+
+      c1_t:'إعلانات', c1_d:'أفكار إعلانية بصرية، تكوينات جريئة، وحملات مصمّمة عشان تلفت الانتباه.',
+      c2_t:'فن الذكاء الاصطناعي', c2_d:'تجارب توليدية، تكوينات فنية، واستكشافات بصرية بدقة عالية.',
+      c3_t:'أفكار إبداعية', c3_d:'دراسات بصرية حرة، استكشافات في اللون والملمس، وأفكار في مرحلة التجريب.',
+      c4_t:'صور منتجات', c4_d:'تكوينات فاخرة تُبرِز المنتج كبطل الصورة — بأسلوب نظيف وعصري.',
+      c_works:'عمل',
+
+      sk_eyebrow:'القدرات', sk_title:'ما أضيفه للإطار.',
+      sk_sub:'مجموعة عملية من القدرات الإبداعية والتقنية اللي بتُطبّق في كل مشروع.',
+      sk1:'تصميم بصري بالذكاء الاصطناعي', sk1d:'سير عمل توليدي مطبّق على مشاكل تصميم حقيقية.',
+      sk2:'هندسة البرومبيت', sk2d:'صياغة اللغة للتحكم في الأسلوب، الإضاءة، والتفاصيل.',
+      sk3:'توليد الصور بالذكاء الاصطناعي', sk3d:'توجيه الأدوات التوليدية نحو هدف بصري محدد.',
+      sk4:'إنتاج فيديو بالذكاء الاصطناعي', sk4d:'فيديوهات قصيرة ومؤثرات حركية بالذكاء الاصطناعي.',
+      sk5:'تصميم بالفوتوشوب', sk5d:'تنقيح، تركيب، وإخراج احترافي بمعايير المجال.',
+      sk6:'أفكار إعلانية', sk6d:'تفكير يبدأ من الفكرة ويدور حول رسالة واضحة.',
+      sk7:'صور المنتجات', sk7d:'تكوينات وتأطير فاخر يركّز على المنتج.',
+      sk8:'حملات السوشيال ميديا', sk8d:'تصاميم مصمّمة لبيئات التمرير السريع.',
+      sk9:'السرد البصري', sk9d:'بناء صورة تحمل حكاية.',
+      sk10:'الإدارة الفنية الإبداعية', sk10d:'قيادة الفكرة من أول تصور حتى الإطار النهائي.',
+
+      ai_eyebrow:'الذكاء الاصطناعي + التصميم', ai_title:'حيث يلتقي الذكاء بالحرفة.',
+      ai_sub:'مجموعة مهارات متخصصة بتجمع بين هندسة البرومبيت المتقدمة وأدوات التصميم الاحترافية.',
+      ai1_t:'هندسة البرومبيت',
+      ai1_d:'كتابة برومبيتات دقيقة ومتعددة الطبقات تعطي أدوات الذكاء الاصطناعي توجيهاً واضحاً — تتحكم في الأسلوب، التكوين، الإضاءة، والتفاصيل في كل عملية توليد.',
+      ai1_b:'نقطة قوة أساسية',
+      ai2_t:'توليد الصور بالذكاء الاصطناعي',
+      ai2_d:'إنتاج صور أصلية عالية الجودة بالذكاء التوليدي — من الأفكار الإعلانية وصور المنتجات إلى التكوينات الفنية.',
+      ai2_b:'أداة يومية',
+      ai3_t:'إنتاج الفيديو بالذكاء الاصطناعي',
+      ai3_d:'إنشاء محتوى فيديو قصير بالذكاء الاصطناعي — صور متحركة، إعلانات حركية، ومقاطع جاهزة للسوشيال ميديا.',
+      ai3_b:'خدمة جديدة',
+      ai4_t:'تصميم بالفوتوشوب',
+      ai4_d:'أعمال فوتوشوب احترافية — تنقيح، تركيب، تصحيح لوني، وتصاميم جاهزة للطباعة وفق معايير المجال.',
+      ai4_b:'أكثر من 5 سنوات',
+      ai5_t:'حملات إعلانية',
+      ai5_d:'حملات بصرية كاملة مبنية على فكرة واحدة — متكيّفة مع كل الصيغ والمنصات وقنوات التواصل.',
+      ai5_b:'حزمة كاملة',
+      ai6_t:'الإدارة الفنية الإبداعية',
+      ai6_d:'قيادة المشروع من أول بريف حتى الصور النهائية — تحديد النبرة، اللوحة اللونية، واللغة البصرية من البداية.',
+      ai6_b:'من البداية للنهاية',
+
+      proc_eyebrow:'العملية', proc_title:'من الفكرة إلى الإطار.',
+      proc_sub:'وصف عام لكيفية انتقال المفهوم من أول فكرة إلى صورة نهائية.',
+      p1_t:'الفكرة', p1_d:'فهم الرسالة، الجمهور، والهدف الإبداعي.',
+      p2_t:'الاتجاه', p2_d:'تطوير المفهوم البصري، التكوين، والاتجاه الفني.',
+      p3_t:'الإنشاء', p3_d:'استخدام أدوات مدعومة بالذكاء الاصطناعي وتقنيات تصميم لتطوير العمل.',
+      p4_t:'الصقل', p4_d:'مراجعة التسلسل البصري، التفاصيل، التايبوغرافي، والعرض النهائي.',
+      p5_t:'التسليم', p5_d:'تجهيز العمل المعتمد للاستخدام المطلوب.',
+
+      fc_eyebrow:'للعملاء',
+      fc_t1:'مرحباً بيك كعميل —', fc_t2:'خلينا نبني حاجة تستحق النظر.',
+      fc1_t:'فكرة تبدأ منك',
+      fc1_d:'قولّي على فكرتك، جمهورك، والهدف من الإعلان — وأنا أحوّلها لتصميم يخدم رسالتك.',
+      fc2_t:'تنفيذ احترافي',
+      fc2_d:'من البرومبيت للتكوين للتسليم — كل خطوة بمعايير مدروسة وبتفاصيل مصقولة.',
+      fc3_t:'تواصل مباشر',
+      fc3_d:'بدون وسطاء، بدون نماذج معقّدة — كلّمني مباشرة على واتساب ونبدأ من أول رسالة.',
+      fc_cta1:'ابدأ مشروعك الآن ↗', fc_cta2:'شاهد أعمالي أولاً',
+
+      ct_eyebrow:'تواصل', ct_t1:'عندك فكرة؟', ct_t2:'لنحوّلها لعمل بصري.',
+      ct_sub:'عندك مشروع، حملة، أو فكرة تستحق الاستكشاف؟ خلينا نتكلم عنها.',
+      ct_cta:'ابدأ محادثة على واتساب ↗',
+      ct_note:'يفتح مباشرة على واتساب · ‎+20 115 401 2821',
+
+      foot_copy:'© 2026 يوسف. جميع الحقوق محفوظة.',
+      foot_tag:'مبني على الأفكار. <b>مصمم ليتميّز.</b>',
+
+      lb_cta:'ناقش مشروعاً مشابهاً ↗', lb_src:'عرض الصفحة الأصلية ↗',
+      lb_count_prefix:'صورة',
+
+      cat_advertising:'إعلانات',
+      cat_product:'صور منتجات',
+      cat_ai_art:'فن الذكاء الاصطناعي',
+      cat_concepts:'أفكار إبداعية'
+    },
+    en: {
+      nav_home:'Home', nav_about:'About', nav_work:'Work', nav_skills:'Skills', nav_contact:'Contact',
+      nav_talk:"Let's Talk ↗", nav_start_convo:'Start a Conversation ↗',
+      mobile_foot:'Egypt — Available for projects',
+
+      hero_hello:'Welcome ✦',
+      hero_t1:"I'm YUOSSEF,", hero_t2:'a', hero_t3:'graphic designer', hero_t4:'using AI.',
+      hero_lead:'I turn ideas into visuals that make people stop and look — advertising design, product visuals, digital art, and AI video. For over <strong>five years</strong>, I have been crafting visuals that make a difference.',
+      hero_cta1:'Explore My Work ↓', hero_cta2:'Chat on WhatsApp ↗',
+
+      hl1:'Years of Experience', hl2:'Clients Worked With',
+      hl3:'Designs Created', hl4:'Portfolio Pieces',
+
+      about_eyebrow:'About',
+      about_t1:'Design is more than', about_t2:'what you see.',
+      about_p1:"I'm YUOSSEF, an independent graphic designer working at the intersection of design, artificial intelligence, and visual storytelling.",
+      about_p2:'I use AI-assisted creative workflows to develop advertising visuals, experiment with distinctive artistic directions, and transform ideas into compelling visual concepts. My toolkit blends generative AI, Adobe Photoshop, and AI video production — all driven by carefully engineered prompts.',
+      about_p3:'With over five years in the field and dozens of clients across different industries, my focus is simple: create work that captures attention, communicates an idea, and leaves a lasting impression.',
+      about_tag:'Independent designer · Egypt',
+
+      port_eyebrow:'Portfolio',
+      port_title:'My full collection.',
+      port_sub:'27 pieces organised into four collections — advertising, product visuals, AI art, and creative concepts. Each image in its own frame, separate from the rest. Click any image to view it full-size.',
+
+      c1_t:'Advertising', c1_d:'Advertising concepts, bold compositions, and campaigns designed to capture attention.',
+      c2_t:'AI Art', c2_d:'Generative experiments, artistic compositions, and high-detail visual explorations.',
+      c3_t:'Creative Concepts', c3_d:'Free visual studies, colour and texture explorations, and ideas in experimentation.',
+      c4_t:'Product Visuals', c4_d:'Premium compositions that put the product at the centre — clean and contemporary.',
+      c_works:'pieces',
+
+      sk_eyebrow:'Capabilities', sk_title:'What I bring to the frame.',
+      sk_sub:'A working set of creative and technical capabilities applied across every project.',
+      sk1:'AI-Powered Visual Design', sk1d:'Generative workflows applied to real design problems.',
+      sk2:'Prompt Engineering', sk2d:'Structuring language to control style, light, and detail.',
+      sk3:'AI Image Generation', sk3d:'Directing generative tools toward a specific visual goal.',
+      sk4:'AI Video Creation', sk4d:'Short-form AI-generated video and motion visuals.',
+      sk5:'Photoshop Design', sk5d:'Professional retouching, compositing, and layout work.',
+      sk6:'Advertising Concepts', sk6d:'Idea-first thinking built around a clear message.',
+      sk7:'Product Visuals', sk7d:'Premium product-focused compositions and framing.',
+      sk8:'Social Media Campaigns', sk8d:'Visuals designed for fast-moving feed environments.',
+      sk9:'Visual Storytelling', sk9d:'Building an image that carries a narrative.',
+      sk10:'Creative Art Direction', sk10d:'Guiding a concept from first idea to final frame.',
+
+      ai_eyebrow:'AI + Design', ai_title:'Where AI meets craft.',
+      ai_sub:'A specialised skill set combining advanced prompt engineering with professional design tools.',
+      ai1_t:'Prompt Engineering',
+      ai1_d:'Writing precise, layered prompts that give AI tools clear direction — controlling style, composition, lighting, and detail across every generation.',
+      ai1_b:'Core Strength',
+      ai2_t:'AI Image Generation',
+      ai2_d:'Producing original, high-quality visuals with generative AI — from advertising concepts and product renders to artistic compositions.',
+      ai2_b:'Everyday Tool',
+      ai3_t:'AI Video Creation',
+      ai3_d:'Creating short-form AI video content — animated visuals, motion ads, and social-ready clips for modern campaigns.',
+      ai3_b:'New Service',
+      ai4_t:'Photoshop Design',
+      ai4_d:'Professional Photoshop work — retouching, compositing, colour grading, and print-ready layouts built to industry standards.',
+      ai4_b:'5+ Years',
+      ai5_t:'Advertising Campaigns',
+      ai5_d:'Full campaign visuals built around a single idea — adapted across formats, platforms, and social channels.',
+      ai5_b:'Full Package',
+      ai6_t:'Creative Direction',
+      ai6_d:'Guiding a project from first brief to finished visuals — defining tone, palette, and visual language from the start.',
+      ai6_b:'End to End',
+
+      proc_eyebrow:'Process', proc_title:'From idea to frame.',
+      proc_sub:'A general description of how a concept moves from first thought to finished visual.',
+      p1_t:'Idea', p1_d:'Understand the message, the audience, and the creative objective.',
+      p2_t:'Direction', p2_d:'Develop a visual concept, composition, and art direction.',
+      p3_t:'Creation', p3_d:'Use appropriate AI-assisted tools and design techniques to develop the artwork.',
+      p4_t:'Refinement', p4_d:'Review the visual hierarchy, details, typography, and final presentation.',
+      p5_t:'Delivery', p5_d:'Prepare the approved visual for its intended use.',
+
+      fc_eyebrow:'For Clients',
+      fc_t1:'Welcome as a client —', fc_t2:"let's build something worth looking at.",
+      fc1_t:'An idea that starts with you',
+      fc1_d:'Tell me about your idea, your audience, and the goal — and I turn it into design that serves your message.',
+      fc2_t:'Professional execution',
+      fc2_d:'From prompt to composition to delivery — every step with considered standards and polished detail.',
+      fc3_t:'Direct contact',
+      fc3_d:'No middlemen, no complex forms — message me directly on WhatsApp and we start from the first message.',
+      fc_cta1:'Start your project now ↗', fc_cta2:'See my work first',
+
+      ct_eyebrow:'Contact', ct_t1:'Have an idea?', ct_t2:"Let's make it visual.",
+      ct_sub:"Got a project, a campaign, or an idea worth exploring? Let's talk about it.",
+      ct_cta:'Start a chat on WhatsApp ↗',
+      ct_note:'Opens directly on WhatsApp · +20 115 401 2821',
+
+      foot_copy:'© 2026 YUOSSEF. ALL RIGHTS RESERVED.',
+      foot_tag:'BUILT AROUND IDEAS. <b>DESIGNED TO STAND OUT.</b>',
+
+      lb_cta:'Discuss a Similar Project ↗', lb_src:'View Original Page ↗',
+      lb_count_prefix:'Image',
+
+      cat_advertising:'Advertising',
+      cat_product:'Product Visuals',
+      cat_ai_art:'AI Art',
+      cat_concepts:'Creative Concepts'
+    }
+  };
+
+  /* ----------------------------------------------------------
+     2. PORTFOLIO DATA — 27 IMAGES
+     ---------------------------------------------------------- */
+  const PORTFOLIO = [
+    { id:1,  cat:'product',     src:'https://i.postimg.cc/cC8vgH65/Cera-Ve-moisturizer-poster-design-20261009203611.jpg', page:'https://postimg.cc/YLMrTt61',
+      title:{ ar:'سيرافي — تصميم عناية بالبشرة', en:'CeraVe — Skincare Visual' },
+      desc:{ ar:'تكوين إعلاني يركّز على المنتج بأسلوب عناية فاخر ونظيف.', en:'Product-focused advertising composition with a clean, premium skincare aesthetic.' } },
+
+    { id:2,  cat:'advertising', src:'https://i.postimg.cc/d1f7VdQg/FB-IMG-1791653517785.jpg', page:'https://postimg.cc/2b4jH1Zx',
+      title:{ ar:'فكرة إعلانية 02', en:'Advertising Concept 02' },
+      desc:{ ar:'تصميم إعلاني مبني على فكرة، بتسلسل بصري قوي.', en:'Concept-driven advertising visual with a strong focal hierarchy.' } },
+
+    { id:3,  cat:'advertising', src:'https://i.postimg.cc/JnFyzJ7J/FB-IMG-1791653546199.jpg', page:'https://postimg.cc/cgQ1Dvn4',
+      title:{ ar:'فكرة إعلانية 03', en:'Advertising Concept 03' },
+      desc:{ ar:'تكوين إعلاني يستكشف التباين والمساحة السلبية.', en:'Advertising composition exploring contrast and negative space.' } },
+
+    { id:4,  cat:'advertising', src:'https://i.postimg.cc/Gts482H0/FB-IMG-1791653550120.jpg', page:'https://postimg.cc/Mfq6gz7t',
+      title:{ ar:'فكرة إعلانية 04', en:'Advertising Concept 04' },
+      desc:{ ar:'تخطيط إعلاني جريء مبني على فكرة بصرية واحدة.', en:'Bold advertising layout built around a single visual idea.' } },
+
+    { id:5,  cat:'advertising', src:'https://i.postimg.cc/1XN8ntfs/FB-IMG-1791653555784.jpg', page:'https://postimg.cc/1VsmbyGj',
+      title:{ ar:'فكرة إعلانية 05', en:'Advertising Concept 05' },
+      desc:{ ar:'تصميم بأسلوب الحملات مع اتجاه لوني مقصود.', en:'Campaign-style visual with a deliberate colour direction.' } },
+
+    { id:6,  cat:'advertising', src:'https://i.postimg.cc/T1WKLwpy/FB-IMG-1791653569600.jpg', page:'https://postimg.cc/q64JWpc0',
+      title:{ ar:'فكرة إعلانية 06', en:'Advertising Concept 06' },
+      desc:{ ar:'مفهوم بصري يستكشف التكوين وموضع العنصر الأساسي.', en:'Visual concept exploring composition and subject placement.' } },
+
+    { id:7,  cat:'advertising', src:'https://i.postimg.cc/CdTzjgq5/FB-IMG-1791653573885.jpg', page:'https://postimg.cc/kRsJmLwP',
+      title:{ ar:'فكرة إعلانية 07', en:'Advertising Concept 07' },
+      desc:{ ar:'عمل إعلاني بمعالجة جرافيكية تحريرية.', en:'Advertising artwork with a graphic, editorial treatment.' } },
+
+    { id:8,  cat:'advertising', src:'https://i.postimg.cc/grFnvWZY/FB-IMG-1791653578359.jpg', page:'https://postimg.cc/sGmjrbm8',
+      title:{ ar:'فكرة إعلانية 08', en:'Advertising Concept 08' },
+      desc:{ ar:'تصميم مبني على رسالة مركزية واضحة.', en:'Concept visual developed around a clear central message.' } },
+
+    { id:9,  cat:'advertising', src:'https://i.postimg.cc/Z0tCrSdL/FB-IMG-1791653582820.jpg', page:'https://postimg.cc/p5CWH3k9',
+      title:{ ar:'فكرة إعلانية 09', en:'Advertising Concept 09' },
+      desc:{ ar:'تكوين إعلاني بإضاءة وعمق محكمين.', en:'Advertising composition with controlled lighting and depth.' } },
+
+    { id:10, cat:'advertising', src:'https://i.postimg.cc/WtLhMvk5/FB-IMG-1791653609223.jpg', page:'https://postimg.cc/BPpS0RNF',
+      title:{ ar:'فكرة إعلانية 10', en:'Advertising Concept 10' },
+      desc:{ ar:'اتجاه بصري يستكشف الحجم والثقل البصري.', en:'Visual direction exploring scale and visual weight.' } },
+
+    { id:11, cat:'advertising', src:'https://i.postimg.cc/667cLfZs/FB-IMG-1791653613211.jpg', page:'https://postimg.cc/vDs5G9XX',
+      title:{ ar:'فكرة إعلانية 11', en:'Advertising Concept 11' },
+      desc:{ ar:'عمل إعلاني مبني على تسلسل تايبوغرافي قوي.', en:'Advertising piece built on strong typographic hierarchy.' } },
+
+    { id:12, cat:'advertising', src:'https://i.postimg.cc/dQ76mjyg/FB-IMG-1791653618378.jpg', page:'https://postimg.cc/pyHKP8kB',
+      title:{ ar:'فكرة إعلانية 12', en:'Advertising Concept 12' },
+      desc:{ ar:'تصميم باتجاه فني بسيط ومصقول.', en:'Concept visual with a refined, minimal art direction.' } },
+
+    { id:13, cat:'concepts', src:'https://i.postimg.cc/NGyD7kXY/FB-IMG-1791653622319.jpg', page:'https://postimg.cc/F140hcGn',
+      title:{ ar:'استكشاف إبداعي 13', en:'Creative Exploration 13' },
+      desc:{ ar:'دراسة إبداعية حرة تستكشف اللون والملمس.', en:'An open creative study exploring colour and texture.' } },
+
+    { id:14, cat:'concepts', src:'https://i.postimg.cc/dQ76mjCq/FB-IMG-1791653626375.jpg', page:'https://postimg.cc/8sSLTWw3',
+      title:{ ar:'استكشاف إبداعي 14', en:'Creative Exploration 14' },
+      desc:{ ar:'تجربة بصرية تركز على الجو والحالة.', en:'Visual experiment focused on atmosphere and mood.' } },
+
+    { id:15, cat:'concepts', src:'https://i.postimg.cc/8kF4Bmv5/FB-IMG-1791653631081.jpg', page:'https://postimg.cc/xq2L9HtD',
+      title:{ ar:'استكشاف إبداعي 15', en:'Creative Exploration 15' },
+      desc:{ ar:'دراسة مفهومية تستكشف التوازن والإيقاع البصري.', en:'Concept study exploring balance and visual rhythm.' } },
+
+    { id:16, cat:'concepts', src:'https://i.postimg.cc/WpD86wZN/FB-IMG-1791653635418.jpg', page:'https://postimg.cc/PNj1dZK9',
+      title:{ ar:'دراسة بصرية 16', en:'Visual Study 16' },
+      desc:{ ar:'دراسة تصميمية في التكوين والتسلسل البصري.', en:'A design study in composition and visual hierarchy.' } },
+
+    { id:17, cat:'concepts', src:'https://i.postimg.cc/kMVsFvSG/FB-IMG-1791653644313.jpg', page:'https://postimg.cc/HjgbT5B1',
+      title:{ ar:'دراسة بصرية 17', en:'Visual Study 17' },
+      desc:{ ar:'استكشاف الشكل، العمق، والتباين الجرافيكي.', en:'Exploration of form, depth, and graphic contrast.' } },
+
+    { id:18, cat:'concepts', src:'https://i.postimg.cc/sfBm94WM/FB-IMG-1791653648816.jpg', page:'https://postimg.cc/Bt02JDM3',
+      title:{ ar:'دراسة بصرية 18', en:'Visual Study 18' },
+      desc:{ ar:'دراسة تكوين مبنية على البساطة والوضوح.', en:'A composition study built on restraint and clarity.' } },
+
+    { id:19, cat:'concepts', src:'https://i.postimg.cc/MZc5bmBv/FB-IMG-1791653652410.jpg', page:'https://postimg.cc/RqBwvfXB',
+      title:{ ar:'دراسة بصرية 19', en:'Visual Study 19' },
+      desc:{ ar:'استكشاف إبداعي بحضور جرافيكي قوي.', en:'Creative exploration with a strong graphic presence.' } },
+
+    { id:20, cat:'ai-art', src:'https://i.postimg.cc/CMWNvnCK/FB-IMG-1791653667736.jpg', page:'https://postimg.cc/5jSLy0Rc',
+      title:{ ar:'تجربة فن AI 20', en:'AI Art Experiment 20' },
+      desc:{ ar:'دراسة بصرية توليدية مصقولة بقرارات تصميمية.', en:'Generative visual study refined through design decisions.' } },
+
+    { id:21, cat:'ai-art', src:'https://i.postimg.cc/WpQn9qmd/FB-IMG-1791653672334.jpg', page:'https://postimages.org/',
+      title:{ ar:'تجربة فن AI 21', en:'AI Art Experiment 21' },
+      desc:{ ar:'عمل بمساعدة الذكاء الاصطناعي يستكشف الضوء والسطح.', en:'AI-assisted artwork exploring light and surface.' } },
+
+    { id:22, cat:'ai-art', src:'https://i.postimg.cc/RCjRPJ1t/FB-IMG-1791653679994.jpg', page:'https://postimg.cc/hh1Tvj54',
+      title:{ ar:'تجربة فن AI 22', en:'AI Art Experiment 22' },
+      desc:{ ar:'تكوين توليدي بلوحة لونية تجريبية.', en:'Generative composition with an experimental colour palette.' } },
+
+    { id:23, cat:'ai-art', src:'https://i.postimg.cc/8zdrmjw8/Picsart-26-10-10-17-19-54-069.jpg', page:'https://postimg.cc/nXzzHV6T',
+      title:{ ar:'تجربة فن AI 23', en:'AI Art Experiment 23' },
+      desc:{ ar:'عمل رقمي يستكشف الملمس والعمق الجوي.', en:'Digital artwork exploring texture and atmospheric depth.' } },
+
+    { id:24, cat:'ai-art', src:'https://i.postimg.cc/cJst905z/Picsart-26-10-10-17-20-56-581.png', page:'https://postimg.cc/5XRtjdJ5',
+      title:{ ar:'تجربة فن AI 24', en:'AI Art Experiment 24' },
+      desc:{ ar:'تصميم مدعوم بالذكاء الاصطناعي بأجواء سينمائية.', en:'AI-assisted visual built around a cinematic mood.' } },
+
+    { id:25, cat:'ai-art', src:'https://i.postimg.cc/W4XFxCBb/Picsart-26-10-10-17-21-53-776.png', page:'https://postimg.cc/WDq1kWpQ',
+      title:{ ar:'تجربة فن AI 25', en:'AI Art Experiment 25' },
+      desc:{ ar:'تكوين تجريبي يمزج الواقعية والتجريد.', en:'Experimental composition blending realism and abstraction.' } },
+
+    { id:26, cat:'ai-art', src:'https://i.postimg.cc/DzBJRHtM/Picsart-26-10-10-17-24-20-123.png', page:'https://postimg.cc/p95LFGVf',
+      title:{ ar:'تجربة فن AI 26', en:'AI Art Experiment 26' },
+      desc:{ ar:'دراسة توليدية تركز على التفاصيل والإيقاع البصري.', en:'Generative study focused on detail and visual rhythm.' } },
+
+    { id:27, cat:'ai-art', src:'https://i.postimg.cc/sfBm94h8/Picsart-26-10-10-17-27-36-047.jpg', page:'https://postimg.cc/t7jF9PDt',
+      title:{ ar:'تجربة فن AI 27', en:'AI Art Experiment 27' },
+      desc:{ ar:'استكشاف إبداعي أخير — لون، شكل، وجو.', en:'Final creative exploration — colour, form, and atmosphere.' } }
+  ];
+
+  const CAT_KEY = {
+    advertising:'cat_advertising', product:'cat_product',
+    'ai-art':'cat_ai_art', concepts:'cat_concepts'
+  };
+
+  /* ----------------------------------------------------------
+     3. STATE
+     ---------------------------------------------------------- */
+  let LANG = (function () {
+    try {
+      const s = localStorage.getItem('yuossef_lang_v3');
+      if (s === 'en' || s === 'ar') return s;
+    } catch (e) {}
+    return 'ar';
+  })();
+
+  function t(key) {
+    const pack = I18N[LANG] || I18N.ar;
+    return pack[key] !== undefined ? pack[key] : (I18N.ar[key] || key);
+  }
+  function catLabel(cat) { return t(CAT_KEY[cat] || 'cat_advertising'); }
+  function pick(obj) { return obj[LANG] || obj.ar; }
+
+  function escapeHTML(str) {
+    return String(str)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  /* ----------------------------------------------------------
+     4. WHATSAPP
+     ---------------------------------------------------------- */
+  function applyWhatsApp() {
+    $$('.wa-link').forEach(function (el) { el.setAttribute('href', WHATSAPP_URL); });
+  }
+
+  /* ----------------------------------------------------------
+     5. BUILD GALLERIES
+     ---------------------------------------------------------- */
+  const galleryEls = $$('[data-gallery]');
+
+  function buildWorkCard(item, globalIndex) {
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'work';
+    card.setAttribute('aria-label', pick(item.title) + ' — ' + catLabel(item.cat));
+    card.dataset.index = String(globalIndex);
+
+    const frame = document.createElement('div');
+    frame.className = 'work-frame';
+
+    const img = document.createElement('img');
+    img.src = item.src;
+    img.alt = pick(item.title);
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.addEventListener('error', function () { frame.classList.add('is-error'); });
+
+    const overlay = document.createElement('div');
+    overlay.className = 'work-overlay';
+    overlay.innerHTML =
+      '<span class="work-idx">' + String(item.id).padStart(2, '0') + '</span>' +
+      '<span class="work-view">' + (LANG === 'ar' ? 'عرض' : 'View') + ' ↗</span>';
+
+    frame.appendChild(img);
+    frame.appendChild(overlay);
+
+    const meta = document.createElement('div');
+    meta.className = 'work-meta';
+    meta.innerHTML =
+      '<h4 class="work-title">' + escapeHTML(pick(item.title)) + '</h4>' +
+      '<span class="work-cat">' + escapeHTML(catLabel(item.cat)) + '</span>';
+
+    card.appendChild(frame);
+    card.appendChild(meta);
+
+    card.addEventListener('click', function () { openLightbox(globalIndex); });
+
+    return card;
+  }
+
+  function buildGalleries() {
+    galleryEls.forEach(function (gal) {
+      gal.innerHTML = '';
+      const cat = gal.dataset.gallery;
+      PORTFOLIO.forEach(function (item, i) {
+        if (item.cat === cat) {
+          gal.appendChild(buildWorkCard(item, i));
+        }
+      });
+    });
+  }
+
+  /* ----------------------------------------------------------
+     6. LANGUAGE
+     ---------------------------------------------------------- */
+  function applyLanguage(lang) {
+    LANG = (lang === 'ar') ? 'ar' : 'en';
+    try { localStorage.setItem('yuossef_lang_v3', LANG); } catch (e) {}
+
+    document.documentElement.setAttribute('lang', LANG);
+    document.documentElement.setAttribute('dir', LANG === 'ar' ? 'rtl' : 'ltr');
+
+    // Static text
+    $$('[data-i18n]').forEach(function (el) {
+      const key = el.getAttribute('data-i18n');
+      const val = t(key);
+      if (typeof val === 'string' && val.indexOf('<') !== -1) {
+        el.innerHTML = val;
+      } else {
+        el.textContent = val;
+      }
+    });
+
+    // Lang buttons
+    $$('.lang-btn').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.lang === LANG);
+    });
+
+    // Rebuild galleries with current lang
+    buildGalleries();
+
+    // Update lightbox
+    if (lightbox.classList.contains('open')) renderLightbox();
+  }
+
+  /* ----------------------------------------------------------
+     7. NAV + MOBILE MENU
+     ---------------------------------------------------------- */
+  const nav = document.getElementById('nav');
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  let menuOpen = false;
+
+  function setMenu(open) {
+    menuOpen = open;
+    navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    mobileMenu.classList.toggle('open', open);
+    document.body.classList.toggle('no-scroll', open);
+  }
+
+  navToggle.addEventListener('click', function () { setMenu(!menuOpen); });
+  $$('[data-mobile-nav]').forEach(function (a) {
+    a.addEventListener('click', function () { setMenu(false); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menuOpen) setMenu(false);
+  });
+
+  // Scroll state
+  let ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      const y = window.scrollY || window.pageYOffset;
+      nav.classList.toggle('scrolled', y > 40);
+      ticking = false;
+    });
+  }, { passive: true });
+
+  /* ----------------------------------------------------------
+     8. LANGUAGE BUTTONS
+     ---------------------------------------------------------- */
+  document.addEventListener('click', function (e) {
+    const btn = e.target.closest('.lang-btn');
+    if (!btn) return;
+    applyLanguage(btn.dataset.lang);
+  });
+
+  /* ----------------------------------------------------------
+     9. REVEAL ON SCROLL
+     ---------------------------------------------------------- */
+  function setupReveal() {
+    const els = $$('.reveal, .process-wrap');
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            en.target.classList.add('in');
+            io.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.10, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('in'); });
+    }
+  }
+
+  /* ----------------------------------------------------------
+     10. ACTIVE NAV
+     ---------------------------------------------------------- */
+  function setupActiveNav() {
+    const ids = ['top', 'about', 'portfolio', 'skills', 'contact'];
+    const sections = ids.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    const links = $$('[data-nav]');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          const id = en.target.id;
+          links.forEach(function (l) {
+            l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+          });
+        });
+      }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+      sections.forEach(function (s) { io.observe(s); });
+    }
+  }
+
+  /* ----------------------------------------------------------
+     11. COUNTERS
+     ---------------------------------------------------------- */
+  function setupCounters() {
+    const nums = $$('[data-count]');
+    let done = false;
+    function run() {
+      if (done) return;
+      done = true;
+      nums.forEach(function (el) {
+        const target = parseInt(el.dataset.count, 10) || 0;
+        if (reduceMotion) { el.textContent = String(target); return; }
+        const dur = 1500;
+        const start = performance.now();
+        function tick(now) {
+          const p = Math.min(1, (now - start) / dur);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = String(Math.floor(target * eased));
+          if (p < 1) requestAnimationFrame(tick);
+          else el.textContent = String(target);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+    const statsEl = document.querySelector('.highlights');
+    if (statsEl && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { run(); io.disconnect(); }
+        });
+      }, { threshold: 0.2 });
+      io.observe(statsEl);
+    } else { run(); }
+  }
+
+  /* ----------------------------------------------------------
+     12. LIGHTBOX
+     ---------------------------------------------------------- */
+  const lightbox = document.getElementById('lightbox');
+  const lbImg    = document.getElementById('lbImg');
+  const lbCat    = document.getElementById('lbCat');
+  const lbTitle  = document.getElementById('lbTitle');
+  const lbDesc   = document.getElementById('lbDesc');
+  const lbCount  = document.getElementById('lbCount');
+  const lbPrev   = document.getElementById('lbPrev');
+  const lbNext   = document.getElementById('lbNext');
+  const lbSource = document.getElementById('lbSource');
+
+  let currentIndex = 0;
+  let lastFocused = null;
+  let touchStartX = 0;
+  let touchStartY = 0;
+
+  function openLightbox(i) {
+    lastFocused = document.activeElement;
+    currentIndex = i;
+    renderLightbox();
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('no-scroll');
+    const cb = lightbox.querySelector('.lb-close');
+    if (cb) cb.focus({ preventScroll: true });
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('no-scroll');
+    lbImg.removeAttribute('src');
+    if (lastFocused && typeof lastFocused.focus === 'function') {
+      lastFocused.focus({ preventScroll: true });
+    }
+  }
+
+  function renderLightbox() {
+    const item = PORTFOLIO[currentIndex];
+    if (!item) return;
+    lbImg.src = item.src;
+    lbImg.alt = pick(item.title);
+    lbCat.textContent = catLabel(item.cat);
+    lbTitle.textContent = pick(item.title);
+    lbDesc.textContent = pick(item.desc);
+    lbCount.textContent = t('lb_count_prefix') + ' ' +
+      String(currentIndex + 1).padStart(2, '0') + ' / ' +
+      String(PORTFOLIO.length).padStart(2, '0');
+    lbSource.href = item.page || item.src;
+  }
+
+  function stepLightbox(dir) {
+    currentIndex = (currentIndex + dir + PORTFOLIO.length) % PORTFOLIO.length;
+    renderLightbox();
+  }
+
+  lbPrev.addEventListener('click', function () { stepLightbox(-1); });
+  lbNext.addEventListener('click', function () { stepLightbox(1); });
+  $$('[data-lb-close]').forEach(function (el) {
+    el.addEventListener('click', closeLightbox);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowLeft') stepLightbox(LANG === 'ar' ? 1 : -1);
+    else if (e.key === 'ArrowRight') stepLightbox(LANG === 'ar' ? -1 : 1);
+  });
+
+  lightbox.addEventListener('touchstart', function (e) {
+    if (e.touches.length !== 1) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+
+  lightbox.addEventListener('touchend', function (e) {
+    if (e.changedTouches.length !== 1) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 52 && Math.abs(dx) > Math.abs(dy)) {
+      stepLightbox(dx > 0 ? -1 : 1);
+    } else if (dy > 90 && Math.abs(dy) > Math.abs(dx)) {
+      closeLightbox();
+    }
+  }, { passive: true });
+
+  /* ----------------------------------------------------------
+     13. SMOOTH ANCHOR SCROLL
+     ---------------------------------------------------------- */
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    e.preventDefault();
+    if (menuOpen) setMenu(false);
+
+    const navH = nav.offsetHeight;
+    const top = target.getBoundingClientRect().top + window.pageYOffset - navH - 12;
+
+    window.scrollTo({
+      top: Math.max(0, top),
+      behavior: reduceMotion ? 'auto' : 'smooth'
+    });
+    if (history.replaceState) history.replaceState(null, '', href);
+  });
+
+  /* ----------------------------------------------------------
+     14. INIT
+     ---------------------------------------------------------- */
+  applyWhatsApp();
+  applyLanguage(LANG);
+  setupReveal();
+  setupActiveNav();
+  setupCounters();
+
+})();
+</script>
+</body>
+</html>
